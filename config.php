@@ -30,5 +30,6 @@ $mysqli = mysqli_connect($databaseHost, $databaseUsername, $databasePassword, $d
       $_SESSION['regis'] = '';
       $_SESSION['regis'] = $_POST['regis']; 
       header("location: regis2.php");
+      
     }
 ?>

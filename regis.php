@@ -7,7 +7,7 @@ include "config.php";
 <body>
 <section id="contacts" class="team">
 		<div class="container">
-			<form>
+			<form method="post">
 			<div class="row">
 				<div class="head_title text-center wow zoomIn" data-wow-duration="0.5s">
 					<h2>Pilih Akun</h2>
@@ -20,7 +20,7 @@ include "config.php";
 							<img src="images/f1.jpg" alt="" />
 							<div class="featured_overlay">
 								<div class="overlay_content">
-									<input type="Submit" class="btn btn-white btn-link" value="Mahasiswa" name="regis">
+									<input type="Submit" class="btn btn-white btn-link" value="mahasiswa" name="regis" >
 								</div>
 							</div>
 						</div>
@@ -30,7 +30,7 @@ include "config.php";
 							<img src="images/f2.jpg" alt="" />
 							<div class="featured_overlay">
 								<div class="overlay_content">
-									<input type="Submit" class="btn btn-white btn-link" value="Dosen" name="regis">
+									<input type="Submit" class="btn btn-white btn-link" value="dosen" name="regis" >
 								</div>
 							</div>
 						</div>
@@ -40,7 +40,7 @@ include "config.php";
 							<img src="images/f3.jpg" alt="" />
 							<div class="featured_overlay">
 								<div class="overlay_content">
-									<input type="Submit" class="btn btn-white btn-link" value="Perusahaan" name="regis">
+									<input type="Submit" class="btn btn-white btn-link" value="perusahaan" name="regis" >
 								</div>
 							</div>
 						</div>
