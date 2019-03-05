@@ -24,24 +24,26 @@
 										<!--<div class="col-lg-8 col-md-8 col-sm-10 col-lg-offset-2 col-md-offset-2 col-sm-offset-1">-->
 										  
 										 <div class="row">
+										 	<div class="col-md-3"></div>
 											<div class="col-md-6">
 												<div class="form-group">
 													<input type="text" class="form-control" name="username" placeholder="Username" required="">
 												</div>
 											</div>
-											
+											<div class="col-md-3"></div>
+										</div>
+										<div class="row">
+											<div class="col-md-3"></div>
 											<div class="col-md-6">
 												<div class="form-group">
 													<input type="password" class="form-control" name="password" placeholder="Password" required="">
 												</div>
 											</div>
-										 </div>
+											<div  class="col-md-3"></div>
+										</div>
+										</div>
+										<td><input type="text" name="vercode" size="10" required="required" />&nbsp;<img src="/captcha/captcha.php" style="margin-top: 1%"></td>
 										
-										  
-
-										  <div class="form-group">
-											<textarea class="form-control" name="message" rows="8" placeholder="Message"></textarea>
-										  </div>
 
 										  <div class="center">
 											<input type="submit" value="Login" class="btn btn-lg" name="login">
