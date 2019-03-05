@@ -21,7 +21,7 @@ $mysqli = mysqli_connect($databaseHost, $databaseUsername, $databasePassword, $d
           $_SESSION['login_user'] = $myusername;
           header("location: .php");
        }else {
-        header("location: Login.php");
+        header("location: login.php");
        }
     }
  
@@ -31,5 +31,33 @@ $mysqli = mysqli_connect($databaseHost, $databaseUsername, $databasePassword, $d
       $_SESSION['regis'] = $_POST['regis']; 
       header("location: regis2.php");
       
+    }
+
+    if(isset($_POST['signup']))
+    {
+      $nama = $_POST['nama'];
+      $email = $_POST['email'];
+      $pwd = $_POST['password'];
+      $nohp = $_POST['nohp'];
+      if ($_SESSION["regis"] == "mahasiswa") 
+      {
+        $npm = $_POST['npm'];
+        $foto = $_POST['foto'];
+        $result = mysqli_query($mysqli, "INSERT INTO mahasiswa(npm,password,nama,email,nohp,foto) VALUES('$npm','$pwd','$nama','$email','$nohp','$foto')");
+        header("location: login.php");
+
+      } elseif ($_SESSION["regis"] == "dosen") 
+      {
+        $nip = $_POST['nip'];
+        $foto = $_POST['foto'];
+        $result = mysqli_query($mysqli, "INSERT INTO dosen(nip,password,nama,email,nohp,foto) VALUES('$nip','$pwd','$nama','$email','$nohp','$foto')");
+        header("location: login.php");
+      } elseif ($_SESSION["regis"] == "perusahaan") 
+      {
+        $id = $_POST['id'];
+        $fax = $_POST['fax'];
+        $result = mysqli_query($mysqli, "INSERT INTO perusahaan(id,password,nama,email,notelp,fax) VALUES('$id','$pwd','$nama','$email','$nohp','$fax')");
+        header("location: login.php");
+      }
     }
 ?>

@@ -7,10 +7,10 @@
 	<section id="contacts" class="team">
 		<div class="container">
 			<div class="row">
-				<div class="head_title text-center wow zoomIn" data-wow-duration="0.5s">
+				<div class="head_title text-center wow fadeIn">
 					<h2>Project Gallery</h2>
 					<div class="separetor"></div>
-					<p>Dokumentasi Praktik Kerja Lapangan</p>
+					<p>Dokumentasi Praktik Kerja Lapangan</p><br><br>
 				</div>
 				
 					<section id="portfolio">
@@ -19,7 +19,7 @@
 								<div class="wedo_content_area">
 									
 									<div class="col-md-6 col-sm-6 col-xs-12">
-										<div class="single_wedo wow fadeIn" data-wow-duration="1s">
+										<div class="single_abouts wow fadeInLeft" data-wow-duration="1s">
 											<div class="single_left_icon">
 												<a href=""><i class="fa fa-star"></i></a>
 											</div>
@@ -32,7 +32,7 @@
 										</div>
 									</div>
 									<div class="col-md-6 col-sm-6 col-xs-12">
-										<div class="single_wedo wow fadeIn" data-wow-duration="1s">
+										<div class="single_abouts wow fadeInRight" data-wow-duration="1s">
 											<div class="single_left_icon">
 												<a href=""><i class="fa fa-star"></i></a>
 											</div>
@@ -45,7 +45,7 @@
 										</div>
 									</div>
 									<div class="col-md-6 col-sm-6 col-xs-12">
-										<div class="single_wedo wow fadeIn" data-wow-duration="1s">
+										<div class="single_abouts wow fadeInLeft" data-wow-duration="1s">
 											<div class="single_left_icon">
 												<a href=""><i class="fa fa-star"></i></a>
 											</div>
@@ -58,7 +58,7 @@
 										</div>
 									</div>
 									<div class="col-md-6 col-sm-6 col-xs-12">
-										<div class="single_wedo wow fadeIn" data-wow-duration="1s">
+										<div class="single_abouts wow fadeInRight" data-wow-duration="1s">
 											<div class="single_left_icon">
 												<a href=""><i class="fa fa-star"></i></a>
 											</div>

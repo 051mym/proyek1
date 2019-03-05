@@ -1,4 +1,4 @@
-	<div class='preloader'><div class='loaded'>&nbsp;</div></div>
+
 	
 	<header id="home" class="header">
 		<div class="main_menu_bg navbar-fixed-top">
@@ -15,7 +15,7 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						  </button>
-						  <a class="navbar-brand" href="#">
+						  <a class="navbar-brand" href="index.php">
 							<div class="logo">
 								<img src="images/logo.png" alt="" />
 							</div>

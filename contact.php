@@ -6,7 +6,7 @@
 	<section id="contacts" class="team">
 		<div class="container">
 			<div class="row">
-				<div class="head_title text-center wow zoomIn" data-wow-duration="0.5s">
+				<div class="head_title text-center wow zoomIn" data-wow-duration="1s">
 					<h2>MEET OUR CREW</h2>
 					<div class="separetor"></div>
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry been the industry's standard dummy text</p>
@@ -14,7 +14,7 @@
 				
 				<div class="main_team_content text-center">
 					<div class="col-md-3 col-sm-6 col-xs-12">
-						<div class="single_team wow fadeIn" data-wow-duration="1.5s">
+						<div class="single_team wow fadeIn" data-wow-duration="0.5s">
 							<div class="single_team_img">
 								<img src="images/tm1.jpg" alt="" />
 								<div class="single_team_overlay text-center">
@@ -29,7 +29,7 @@
 						</div>
 					</div>
 					<div class="col-md-3 col-sm-6 col-xs-12">
-						<div class="single_team wow fadeIn" data-wow-duration="2s">
+						<div class="single_team wow fadeIn" data-wow-duration="1s">
 							<div class="single_team_img">
 								<img src="images/tm2.jpg" alt="" />
 								<div class="single_team_overlay text-center">
@@ -44,7 +44,7 @@
 						</div>
 					</div>
 					<div class="col-md-3 col-sm-6 col-xs-12">
-						<div class="single_team wow fadeIn" data-wow-duration="2.5s">
+						<div class="single_team wow fadeIn" data-wow-duration="1.5s">
 							<div class="single_team_img">
 								<img src="images/tm3.jpg" alt="" />
 								<div class="single_team_overlay text-center">
@@ -60,7 +60,7 @@
 						</div>
 					</div>
 					<div class="col-md-3 col-sm-6 col-xs-12">
-						<div class="single_team wow fadeIn" data-wow-duration="2.5s">
+						<div class="single_team wow fadeIn" data-wow-duration="2s">
 							<div class="single_team_img">
 								<img src="images/tm3.jpg" alt="" />
 								<div class="single_team_overlay text-center">
@@ -76,7 +76,7 @@
 						</div>
 					</div>
 					<div class="col-md-3 col-sm-6 col-xs-6">
-						<div class="single_team wow fadeIn" data-wow-duration="2.8s">
+						<div class="single_team wow fadeIn" data-wow-duration="2.5s">
 							<div class="single_team_img">
 								<img src="images/tm4.jpg" alt="" />
 								<div class="single_team_overlay text-center">

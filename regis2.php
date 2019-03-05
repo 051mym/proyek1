@@ -15,29 +15,33 @@ include 'head.php'; include "config.php";
         </div>
         
         <div class="main_team_content text-center">
-            <form action="/action_page.php">
+            <form method="post">
               <div class="row">
                 <div class="col-sm-4"></div>
                   <div class="col-sm-4">
                     
                   <?php
-                  if ($_SESSION["regis"] == "Mahasiswa") {
+                  if ($_SESSION["regis"] == "mahasiswa") {
                     echo '<div class="form-group">
                     <label for="npm">NPM :</label>
                     <input type="number" class="form-control" name="npm">
                   </div>';
-                  } elseif ($_SESSION["regis"] == "Dosen") {
+                  } elseif ($_SESSION["regis"] == "dosen") {
                     echo '<div class="form-group">
                     <label for="npm">NIP :</label>
                     <input type="number" class="form-control" name="nip">
                   </div>';
-                  } elseif ($_SESSION["regis"] == "Perusahaan") {
+                  } elseif ($_SESSION["regis"] == "perusahaan") {
                     echo '<div class="form-group">
-                    <label for="npm">NPM :</label>
+                    <label for="npm">ID :</label>
                     <input type="number" class="form-control" name="npm">
                   </div>';
                   }
                   ?>
+                  <div class="form-group">
+                    <label for="nama">Name :</label>
+                    <input type="text" class="form-control" name="nama">
+                  </div>
 
                   <div class="form-group">
                     <label for="email">E-mail :</label>
@@ -47,23 +51,30 @@ include 'head.php'; include "config.php";
                     <label for="password">Password :</label>
                     <input type="password" class="form-control" name="password">
                   </div>
+
                   <div class="form-group">
-                    <label for="nama">Name :</label>
-                    <input type="text" class="form-control" name="nama">
+                    <label for="hp">Phone Number :</label>
+                    <input type="number" class="form-control" name="nohp">
                   </div>
-                  <div class="form-group">
-                    <label for="hp">Phone :</label>
-                    <input type="number" class="form-control" name="hp">
-                  </div>
-<!--              <div class="form-group">
-                    <label for="foto">Password:</label>
-                    <input type="text" class="form-control" id="pwd">
-                  </div> -->
+                  <?php 
+                  if ($_SESSION["regis"] != "perusahaan") {
+                    echo '<div class="form-group">
+                    <label for="foto">Foto :</label>
+                    <input type="text" class="form-control" name="foto" >
+                  </div>';
+                  } else {
+                    # code...
+                    echo '<div class="form-group">
+                    <label for="fax">Fax :</label>
+                    <input type="text" class="form-control" name="fax">
+                  </div>';
+                  } ?>
+
                   </div>
                 <div class="col-sm-4"></div>
               </div>
               <div class="row">
-              <button type="submit" class="btn btn-default" name="regis_mahasiswa">Submit</button>
+              <button type="submit" class="btn btn-default" name="signup">Submit</button>
               </div>
             </form>
         </div>

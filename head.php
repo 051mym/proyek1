@@ -1,7 +1,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>PKL sistem online</title>
+	<title>Sistem PKL Online</title>
 	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css" />
 	
 	<link rel="stylesheet" href="css/fonts/stylesheet.css" />

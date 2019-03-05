@@ -2,6 +2,7 @@
 <html>
 <?php include 'head.php';?>
 <body>
+<div class='preloader'><div class='loaded'>&nbsp;</div></div>
 <?php include 'header.php';?>
 	<section id="banner" class="banner">
 		<div class="container">
@@ -26,7 +27,7 @@
 		<section id="featured" class="featured">
 		<div class="container">
 			<div class="row">
-				<div class="head_title text-center wow flipInX" data-wow-duration="1s">
+				<div class="head_title text-center wow flipInX">
 					<h2>Praktek Kerja Lapangan</h2>
 					<div class="separetor"></div>
 					<p>Praktek Kerja Lapangan merupakan kegiatan intrakurikuler yang bersifat wajib bagi mahasiswa Program Studi Sistem Informasi UPN “Veteran” Jatim, dengan bobot 2 SKS yang dapat dilakukan minimal 1 (satu) bulan atau lebih, sesuai kesepakatan dengan pihak perusahaan dimana mahasiswa melakukan Praktek Kerja Lapangan</p><br>
