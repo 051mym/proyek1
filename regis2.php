@@ -21,17 +21,17 @@ include 'head.php'; include "config.php";
                   <div class="col-sm-4">
                     
                   <?php
-                  if ($_SESSION["regis"] == "mahasiswa") {
+                  if ($_SESSION["regis"] == "Mahasiswa") {
                     echo '<div class="form-group">
                     <label for="npm">NPM :</label>
                     <input type="number" class="form-control" name="npm">
                   </div>';
-                  } elseif ($_SESSION["regis"] == "dosen") {
+                  } elseif ($_SESSION["regis"] == "Dosen") {
                     echo '<div class="form-group">
                     <label for="npm">NIP :</label>
                     <input type="number" class="form-control" name="nip">
                   </div>';
-                  } elseif ($_SESSION["regis"] == "perusahaan") {
+                  } elseif ($_SESSION["regis"] == "Perusahaan") {
                     echo '<div class="form-group">
                     <label for="npm">ID :</label>
                     <input type="number" class="form-control" name="npm">
@@ -57,7 +57,7 @@ include 'head.php'; include "config.php";
                     <input type="number" class="form-control" name="nohp">
                   </div>
                   <?php 
-                  if ($_SESSION["regis"] != "perusahaan") {
+                  if ($_SESSION["regis"] != "Perusahaan") {
                     echo '<div class="form-group">
                     <label for="foto">Foto :</label>
                     <input type="text" class="form-control" name="foto" >

@@ -9,15 +9,30 @@ $mysqli = mysqli_connect($databaseHost, $databaseUsername, $databasePassword, $d
 
   if(isset($_POST['login'])) {
     if ($_POST["vercode"] != $_SESSION["vercode"] OR $_SESSION["vercode"]=='')  {
-        echo "<script>alert('Incorrect verification code');</script>" ;
+
+        header("Location: login.php");
     }else{
+       $_SESSION['login'] = "";
        $user = mysqli_real_escape_string($mysqli,$_POST['username']);
-       $password = mysqli_real_escape_string($mysqli,$_POST['password']); 
-       $sql = "SELECT * FROM mahasiswa WHERE npm = '$user' and password = '$password'";
+       $password = mysqli_real_escape_string($mysqli,$_POST['password']);
+       if(strlen($user) == 1 )
+       {
+         $sql = "SELECT * FROM admin WHERE id = '$user' and password = '$password'";
+         $_SESSION['login'] = "Admin";
+       } elseif (strlen($user) == 10) {
+         $sql = "SELECT * FROM mahasiswa WHERE npm = '$user' and password = '$password'";
+         $_SESSION['login'] = "Mahasiswa";
+       } elseif (strlen($user) > 10 ) {
+         $sql = "SELECT * FROM dosen WHERE nip = '$user' and password = '$password'";
+         $_SESSION['login'] = "Dosen";
+       } else {
+         $sql = "SELECT * FROM perusahaan WHERE id = '$user' and password = '$password'";
+         $_SESSION['login'] = "Perusahaan";
+       }
+       // $sql = "SELECT * FROM mahasiswa WHERE npm = '$user' and password = '$password'";
        $result = mysqli_query($mysqli,$sql);
-       $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-        if($row['npm'] == $user && $row['password'] == $password) {
-          header("Location: mahasiswa.php");
+        if($result) {
+          header("Location: page.php");
           }else {
         header("Location: login.php");
        }

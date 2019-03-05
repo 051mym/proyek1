@@ -1,3 +1,4 @@
+<?php session_start();  ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -24,7 +25,7 @@
                 </div>
 
                 <ul class="list-unstyled components">
-                    <p><?php echo $_SESSION["regis"]; ?></p>
+                    <p><?php echo $_SESSION["login"]; ?></p>
                     <li>
                         <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Home</a>
                         <ul class="collapse list-unstyled" id="homeSubmenu">

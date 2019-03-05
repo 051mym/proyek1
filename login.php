@@ -42,16 +42,27 @@
 											<div  class="col-md-3"></div>
 										</div>
 										</div>
-										<td><input type="text" name="vercode" size="10" required="required" />&nbsp;<img src="captcha/captcha.php" style="margin-top: 1%"></td>
-										
-
-										  <div class="center">
-											<input type="submit" value="Login" class="btn btn-lg" name="login">
-											  <div class="container signin">
+										<div class="row">
+											<div class="col-md-3"></div>
+											<div class="col-md-6">
+													<div class="row">
+														<div class="form-group col-md-3">
+															<input type="text" name="vercode" placeholder="Enter Captcha" class="form-control" required="required" />&nbsp;
+														</div>
+														<div class="col-md-3"><img class="form-control"  src="captcha/captcha.php"></div>
+														<div class="col-md-6"></div>
+													</div>
+											</div>
+											<div class="col-md-3"></div>
+										</div>
+										<div class="row">
+											<div class="col-md-3"></div>
+											<div class="col-md-6">
+												<input type="submit" value="Login" class="form-control" name="login"><br>
     											<p><b>Don't have account? <a href="regis.php">Sign Up</a>.</b></p>
-  											  </div>
-										  </div>
-										<!--</div>--> 
+											</div>
+											<div class="col-md-3"></div>
+										</div>
 								</form>
 							</div>
 						</div>
