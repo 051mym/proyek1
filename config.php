@@ -56,20 +56,22 @@ $mysqli = mysqli_connect($databaseHost, $databaseUsername, $databasePassword, $d
       $email = $_POST['email'];
       $pwd = $_POST['password'];
       $nohp = $_POST['nohp'];
-      if ($_SESSION["regis"] == "Mahasiswa") 
+      $npm = $_POST['npm'];
+
+      $image = addslashes(file_get_contents($_FILES['foto']['tmp_name']));
+
+    if ($_SESSION["regis"] == "Mahasiswa") 
       {
         $npm = $_POST['npm'];
-        $foto = $_POST['foto'];
-        $result = mysqli_query($mysqli, "INSERT INTO mahasiswa(npm,password,nama,email,nohp,foto) VALUES('$npm','$pwd','$nama','$email','$nohp','$foto')");
+        $result = mysqli_query($mysqli, "INSERT INTO mahasiswa(npm,password,nama,email,nohp,foto) VALUES('$npm','$pwd','$nama','$email','$nohp','$image')");
         header("location: login.php");
 
-      } elseif ($_SESSION["regis"] == "Dosen") 
+      } else if ($_SESSION["regis"] == "Dosen") 
       {
         $nip = $_POST['nip'];
-        $foto = $_POST['foto'];
-        $result = mysqli_query($mysqli, "INSERT INTO dosen(nip,password,nama,email,nohp,foto) VALUES('$nip','$pwd','$nama','$email','$nohp','$foto')");
+        $result = mysqli_query($mysqli, "INSERT INTO dosen(nip,password,nama,email,nohp,foto) VALUES('$nip','$pwd','$nama','$email','$nohp','$image')");
         header("location: login.php");
-      } elseif ($_SESSION["regis"] == "Perusahaan") 
+      } else if ($_SESSION["regis"] == "Perusahaan") 
       {
         $id = $_POST['id'];
         $fax = $_POST['fax'];
