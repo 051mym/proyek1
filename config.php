@@ -19,10 +19,10 @@ $mysqli = mysqli_connect($databaseHost, $databaseUsername, $databasePassword, $d
        {
          $sql = "SELECT * FROM admin WHERE id = '$user' and password = '$password'";
          $_SESSION['login'] = "Admin";
-       } elseif (strlen($user) == 10) {
+       } elseif (strlen($user) == 11) {
          $sql = "SELECT * FROM mahasiswa WHERE npm = '$user' and password = '$password'";
          $_SESSION['login'] = "Mahasiswa";
-       } elseif (strlen($user) > 10 ) {
+       } elseif (strlen($user) > 11 ) {
          $sql = "SELECT * FROM dosen WHERE nip = '$user' and password = '$password'";
          $_SESSION['login'] = "Dosen";
        } else {

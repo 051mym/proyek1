@@ -25,7 +25,7 @@
                 </div>
 
                 <ul class="list-unstyled components">
-                    <p>Admin</p>
+                    <p>Mahasiswa</p>
                     <li>
                         <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Profile</a>
                         <ul class="collapse list-unstyled" id="homeSubmenu">
@@ -34,13 +34,10 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#">Verifikasi data PKL</a>
+                        <a href="#">Pengajuan PKL</a>
                     </li>
                     <li>
-                        <a href="#">List PKL</a>
-                    </li>
-                    <li>
-                        <a href="#">Manage Database</a>
+                        <a href="#">Status Pengajuan</a>
                     </li>
                     <li>
                         <a href="logout.php">Logout</a>
