@@ -1,5 +1,6 @@
 <?php 
-include 'head.php'; include "config.php";
+include 'config.php';
+include 'head.php'; 
 ?>
 <!DOCTYPE html>
 <html>
@@ -15,26 +16,26 @@ include 'head.php'; include "config.php";
         </div>
         
         <div class="main_team_content text-center">
-            <form method="post">
+            <form method="POST" enctype="multipart/form-data">
               <div class="row">
                 <div class="col-sm-4"></div>
                   <div class="col-sm-4">
                     
                   <?php
-                  if ($_SESSION["regis"] == "mahasiswa") {
+                  if ($_SESSION["regis"] == "Mahasiswa") {
                     echo '<div class="form-group">
                     <label for="npm">NPM :</label>
                     <input type="number" class="form-control" name="npm">
                   </div>';
-                  } elseif ($_SESSION["regis"] == "dosen") {
+                  } elseif ($_SESSION["regis"] == "Dosen") {
                     echo '<div class="form-group">
-                    <label for="npm">NIP :</label>
+                    <label for="nip">NIP :</label>
                     <input type="number" class="form-control" name="nip">
                   </div>';
-                  } elseif ($_SESSION["regis"] == "perusahaan") {
+                  } elseif ($_SESSION["regis"] == "Perusahaan") {
                     echo '<div class="form-group">
-                    <label for="npm">ID :</label>
-                    <input type="number" class="form-control" name="npm">
+                    <label for="id">ID :</label>
+                    <input type="number" class="form-control" name="id">
                   </div>';
                   }
                   ?>
@@ -57,10 +58,10 @@ include 'head.php'; include "config.php";
                     <input type="number" class="form-control" name="nohp">
                   </div>
                   <?php 
-                  if ($_SESSION["regis"] != "perusahaan") {
+                  if ($_SESSION["regis"] != "Perusahaan") {
                     echo '<div class="form-group">
                     <label for="foto">Foto :</label>
-                    <input type="text" class="form-control" name="foto" >
+                    <input type="file" class="form-control" name="foto" >
                   </div>';
                   } else {
                     # code...
@@ -74,7 +75,7 @@ include 'head.php'; include "config.php";
                 <div class="col-sm-4"></div>
               </div>
               <div class="row">
-              <button type="submit" class="btn btn-default" name="signup">Submit</button>
+              <button type="submit" class="btn btn-submit" name="signup">Submit</button>
               </div>
             </form>
         </div>
