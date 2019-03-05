@@ -45,7 +45,6 @@
 
 										  <div class="center">
 											<input type="submit" value="Login" class="btn btn-lg" name="login">
-											<a href="">misal udah login</a>
 											  <div class="container signin">
     											<p><b>Don't have account? <a href="regis.php">Sign Up</a>.</b></p>
   											  </div>
