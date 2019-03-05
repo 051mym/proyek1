@@ -42,7 +42,7 @@
 											<div  class="col-md-3"></div>
 										</div>
 										</div>
-										<td><input type="text" name="vercode" size="10" required="required" />&nbsp;<img src="/captcha/captcha.php" style="margin-top: 1%"></td>
+										<td><input type="text" name="vercode" size="10" required="required" />&nbsp;<img src="captcha/captcha.php" style="margin-top: 1%"></td>
 										
 
 										  <div class="center">
