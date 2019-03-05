@@ -1,4 +1,4 @@
-<?php session_start();  ?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -25,22 +25,23 @@
                 </div>
 
                 <ul class="list-unstyled components">
-                    <p>Admin</p>
+                    <p>Perusahaan </p>
                     <li>
                         <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Profile</a>
                         <ul class="collapse list-unstyled" id="homeSubmenu">
-                            <li><a href="p_perusahaan1.php">Your Profile</a></li>
-                            <li><a href="p_perusahaan2.php">Edit Profile</a></li>
+                            <li><a href="#">Your Company</a></li>
+                            <li><a href="edit2.php">Edit Profile</a></li>
                         </ul>
                     </li>
+
                     <li>
-                        <a href="#">Verifikasi data PKL</a>
+                        <a href="p_persetujuan.php">Persetujuan</a>
                     </li>
                     <li>
-                        <a href="#">List PKL</a>
+                        <a href="#">Pengajuan Mahasiswa PKL</a>
                     </li>
                     <li>
-                        <a href="#">Manage Database</a>
+                        <a href="#">Pengajuan Diterima</a>
                     </li>
                     <li>
                         <a href="logout.php">Logout</a>
@@ -70,9 +71,6 @@
                     </div>
                 </nav>
 
-                <?php
-                    include 'edit.php';
-                ?>
 
             </div>
         </div>

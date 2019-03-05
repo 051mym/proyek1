@@ -1,4 +1,4 @@
-<?php session_start();  ?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -25,17 +25,17 @@
                 </div>
 
                 <ul class="list-unstyled components">
-                    <h1>Perusahaan</h1>
+                    <p>Perusahaan </p>
                     <li>
                         <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Profile</a>
                         <ul class="collapse list-unstyled" id="homeSubmenu">
                             <li><a href="#">Your Company</a></li>
-                            <li><a href="#">Edit Profile</a></li>
+                            <li><a href="edit.php">Edit Profile</a></li>
                         </ul>
                     </li>
 
                     <li>
-                        <a href="#">Persetujuan</a>
+                        <a href="p_persetujuan.php">Persetujuan</a>
                     </li>
                     <li>
                         <a href="#">Pengajuan Mahasiswa PKL</a>
@@ -71,17 +71,6 @@
                     </div>
                 </nav>
 
-                <?php
-                if ($_SESSION["login"] == "Mahasiswa") {
-                    include 'mahasiswa.php';
-                } elseif ($_SESSION["login"] == "Dosen") {
-                    include 'dosen.php';
-                } elseif ($_SESSION["login"] == "Perusahaan") {
-                    include 'perusahaan.php';
-                }else {
-                    include 'admin.php';
-                }
-                ?>
 
             </div>
         </div>

@@ -71,7 +71,15 @@
                 </nav>
 
                 <?php
-                    include 'edit.php';
+                if ($_SESSION["login"] == "Mahasiswa") {
+                    include 'mahasiswa.php';
+                } elseif ($_SESSION["login"] == "Dosen") {
+                    include 'dosen.php';
+                } elseif ($_SESSION["login"] == "Perusahaan") {
+                    include 'perusahaan.php';
+                }else {
+                    include 'admin.php';
+                }
                 ?>
 
             </div>
