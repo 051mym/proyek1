@@ -15,10 +15,12 @@
     </head>
     <body>
         <?php include 'navbar2.php';  ?>
-        p_home
+        
+
+        
+        
+
+
         <?php include 'navbar22.php';  ?>
-
-
-
     </body>
 </html>

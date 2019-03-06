@@ -3,7 +3,7 @@
 <?php include 'head.php';?>
 <body>
 
-<?php include 'header.php';?>
+<?php include 'navbar.php';?>
 <br>
 	<section id="abouts" class="abouts">
 		<div class="container">

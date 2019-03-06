@@ -1,4 +1,4 @@
-<?php session_start();  ?>
+<?php include 'config.php';  ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -11,88 +11,77 @@
          <!-- Bootstrap CSS CDN -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <!-- Our Custom CSS -->
-        <link rel="stylesheet" href="style5.css">
+        <link rel="stylesheet" href="css/style5.css">
     </head>
     <body>
+        <?php include 'navbar2.php';  ?>
+        
+        <div class="main_team_content text-center">
+            <form method="POST" enctype="multipart/form-data">
+              <div class="row">
+                <div class="col-sm-4"></div>
+                  <div class="col-sm-4">
+                    
+                  <?php
+                  if ($_SESSION["regis"] == "Mahasiswa") {
+                    echo '<div class="form-group">
+                    <label for="npm">NPM :</label>
+                    <input type="number" class="form-control" name="npm">
+                  </div>';
+                  } elseif ($_SESSION["regis"] == "Dosen") {
+                    echo '<div class="form-group">
+                    <label for="nip">NIP :</label>
+                    <input type="number" class="form-control" name="nip">
+                  </div>';
+                  } elseif ($_SESSION["regis"] == "Perusahaan") {
+                    echo '<div class="form-group">
+                    <label for="id">ID :</label>
+                    <input type="number" class="form-control" name="id">
+                  </div>';
+                  }
+                  ?>
+                  <div class="form-group">
+                    <label for="nama">Name :</label>
+                    <input type="text" class="form-control" name="nama">
+                  </div>
 
+                  <div class="form-group">
+                    <label for="email">E-mail :</label>
+                    <input type="email" class="form-control" name="email">
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Password :</label>
+                    <input type="password" class="form-control" name="password">
+                  </div>
 
+                  <div class="form-group">
+                    <label for="hp">Phone Number :</label>
+                    <input type="number" class="form-control" name="nohp">
+                  </div>
+                  <?php 
+                  if ($_SESSION["regis"] != "Perusahaan") {
+                    echo '<div class="form-group">
+                    <label for="foto">Foto :</label>
+                    <input type="file" class="form-control" name="foto" >
+                  </div>';
+                  } else {
+                    # code...
+                    echo '<div class="form-group">
+                    <label for="fax">Fax :</label>
+                    <input type="text" class="form-control" name="fax">
+                  </div>';
+                  } ?>
 
-        <div class="wrapper">
-            <!-- Sidebar Holder -->
-            <nav id="sidebar">
-                <div class="sidebar-header">
-                    <h3>PKL Online</h3>
-                </div>
-
-                <ul class="list-unstyled components">
-                    <p>Admin</p>
-                    <li>
-                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Profile</a>
-                        <ul class="collapse list-unstyled" id="homeSubmenu">
-                            <li><a href="p_perusahaan1.php">Your Profile</a></li>
-                            <li><a href="p_perusahaan2.php">Edit Profile</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Verifikasi data PKL</a>
-                    </li>
-                    <li>
-                        <a href="#">List PKL</a>
-                    </li>
-                    <li>
-                        <a href="#">Manage Database</a>
-                    </li>
-                    <li>
-                        <a href="logout.php">Logout</a>
-                    </li>
-                </ul>
-            </nav>
-
-            <!-- Page Content Holder -->
-            <div id="content">
-
-                <nav class="navbar navbar-default">
-                    <div class="container-fluid">
-
-                        <div class="navbar-header">
-                            <button type="button" id="sidebarCollapse" class="navbar-btn">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </button>
-                        </div>
-
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><a href="#">llololo</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-
-                <?php
-                    include 'edit.php';
-                ?>
-
-            </div>
+                  </div>
+                <div class="col-sm-4"></div>
+              </div>
+              <div class="row">
+              <button type="submit" class="btn btn-submit" name="update">Submit</button>
+              </div>
+            </form>
         </div>
 
 
-
-
-
-        <!-- jQuery CDN -->
-         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-         <!-- Bootstrap Js CDN -->
-         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-         <script type="text/javascript">
-             $(document).ready(function () {
-                 $('#sidebarCollapse').on('click', function () {
-                     $('#sidebar').toggleClass('active');
-                     $(this).toggleClass('active');
-                 });
-             });
-         </script>
+        <?php include 'navbar22.php';  ?>
     </body>
 </html>

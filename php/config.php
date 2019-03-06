@@ -110,7 +110,7 @@ if(isset($_POST['update']))
         $id = $_POST['id'];
         $fax = $_POST['fax'];
         $result = mysqli_query($mysqli, "UPDATE perusahaan SET password='$pwd',nama='$nama',email='$email',nohp='$nohp',fax='$fax' WHERE id='$id'");
-        header("location: profile.php");
+        header("location: p_home.php");
       }
     }
 

@@ -5,6 +5,7 @@ include "config.php";
 <html>
 <?php include 'head.php';?>
 <body>
+	
 <section id="contacts" class="team">
 		<div class="container">
 			<form method="post">

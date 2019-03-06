@@ -1,2 +1,0 @@
-<div class="header"><img src="gambar/upn-veteran-jatim_20170223_213700.jpg" alt="" name="Insert_logo" width="950" height="200" id="Insert_logo" style="background-color: #C6D580; display:block;" /> 
-    <!-- end .header --></div>

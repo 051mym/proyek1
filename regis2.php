@@ -1,10 +1,9 @@
 <?php 
 include 'config.php';
-include 'head.php'; 
 ?>
 <!DOCTYPE html>
 <html>
-
+<?php include 'head.php';?>
 <body>
   
   <section id="team" class="team">

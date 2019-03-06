@@ -3,7 +3,8 @@
 <?php include 'head.php';?>
 <body>
 <div class='preloader'><div class='loaded'>&nbsp;</div></div>
-<?php include 'header.php';?>
+<?php include 'navbar.php';?>
+
 	<section id="banner" class="banner">
 		<div class="container">
 			<div class="row">

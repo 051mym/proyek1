@@ -9,15 +9,16 @@
         <title>Sistem PKL Online</title>
 
          <!-- Bootstrap CSS CDN -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+            <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
         <!-- Our Custom CSS -->
         <link rel="stylesheet" href="css/style5.css">
+
     </head>
     <body>
         <?php include 'navbar2.php';  ?>
-        p_home
+        
         <?php include 'navbar22.php';  ?>
-
 
 
     </body>
