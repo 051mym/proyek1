@@ -1,5 +1,8 @@
-<!DOCTYPE html>
-<html>
+<?php 
+include 'config.php';
+?>
+<!DOCTYPE html >
+<html lang="en">
 <?php include 'head.php';?>
 <body>
 <?php include 'navbar.php';?>
@@ -20,7 +23,10 @@
 					<div class="messsage_contant">
 						<div class="col-md-12 col-sm-12">
 							<div class="single_message_left wow fadeIn" data-wow-duration="1s">
-								<form action="config.php" method="post" id="formid">
+            					<div class="center">
+            						<?php echo $Err; ?>
+          						</div>
+								<form method="post" id="formid">
 										<!--<div class="col-lg-8 col-md-8 col-sm-10 col-lg-offset-2 col-md-offset-2 col-sm-offset-1">-->
 										  
 										 <div class="row">

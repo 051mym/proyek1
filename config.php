@@ -6,7 +6,7 @@ $databaseName = 'pkl';
 $databaseUsername = 'root';
 $databasePassword = '';
 $mysqli = mysqli_connect($databaseHost, $databaseUsername, $databasePassword, $databaseName); 
-
+$Err = "";
 
   if(isset($_POST['login'])) {
     if ($_POST["vercode"] != $_SESSION["vercode"] OR $_SESSION["vercode"]=='')  {
@@ -22,49 +22,45 @@ $mysqli = mysqli_connect($databaseHost, $databaseUsername, $databasePassword, $d
          $sql = "SELECT * FROM admin WHERE id = '$user' and password = '$password'";
          $result = mysqli_query($mysqli,$sql);
          $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-         if($row['id'] == $user && $row['password'] == $password){
-              $_SESSION['login'] = "Admin";
-              header("Location: a_home.php");
-         }else
-         {
-              header("Location: login.php");
-         }
+             if($row['id'] == $user && $row['password'] == $password){
+                  $_SESSION['login'] = "Admin";
+                  header("Location: a_home.php");
+             }else if ($row['id'] != $user && $row['password'] != $password) {
+                     $Err = '<div class="alert alert-danger"> ID dan Password salah. </div>';
+             }
          
        } elseif (strlen($user) == 11) {
          $sql = "SELECT * FROM mahasiswa WHERE npm = '$user' and password = '$password'";
          $result = mysqli_query($mysqli,$sql);
          $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-         if($row['npm'] == $user && $row['password'] == $password){
-                $_SESSION['login'] = "Mahasiswa";
-                header("Location: m_home.php");
-         }else
-         {
-              header("Location: login.php");
-         }
+             if($row['npm'] == $user && $row['password'] == $password){
+                    $_SESSION['login'] = "Mahasiswa";
+                    header("Location: m_home.php");
+             }else if ($row['npm'] != $user && $row['password'] != $password) {
+                     $Err = '<div class="alert alert-danger"> NPM dan Password salah. </div>';
+             }
 
        } elseif (strlen($user) > 11 ) {
          $sql = "SELECT * FROM dosen WHERE nip = '$user' and password = '$password'";
          $result = mysqli_query($mysqli,$sql);
          $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-         if($row['nip'] == $user && $row['password'] == $password){
-                  $_SESSION['login'] = "Dosen";
-                  header("Location: d_home.php");
-         }else
-         {
-              header("Location: login.php");
-         }
+             if($row['nip'] == $user && $row['password'] == $password){
+                      $_SESSION['login'] = "Dosen";
+                      header("Location: d_home.php");
+             }else if ($row['nip'] != $user && $row['password'] != $password) {
+                     $Err = '<div class="alert alert-danger"> NIP dan Password salah. </div>';
+             }
 
        } elseif (strlen($user) == 5 ) {
          $sql = "SELECT * FROM perusahaan WHERE id = '$user' and password = '$password'";
          $result = mysqli_query($mysqli,$sql);
          $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-         if($row['id'] == $user && $row['password'] == $password){
-                  $_SESSION['login'] = "Perusahaan";
-                  header("Location: p_home.php");
-         }else
-         {
-              header("Location: login.php");
-         }
+             if($row['id'] == $user && $row['password'] == $password){
+                      $_SESSION['login'] = "Perusahaan";
+                      header("Location: p_home.php");
+             }else if ($row['id'] != $user && $row['password'] != $password) {
+                     $Err = '<div class="alert alert-danger"> ID dan Password salah. </div>';
+             }
 
        } else {header("Location: login.php");}
 
