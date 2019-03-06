@@ -40,6 +40,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <!-- Our Custom CSS -->
         <link rel="stylesheet" href="css/style5.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <?php include 'navbar2.php';  ?>
