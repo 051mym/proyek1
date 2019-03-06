@@ -24,17 +24,17 @@ include 'config.php';
                   if ($_SESSION["regis"] == "Mahasiswa") {
                     echo '<div class="form-group">
                     <label for="npm">NPM :</label>
-                    <input type="number" class="form-control" name="npm">
+                    <input type="number" class="form-control" name="npm" pattern="^[0-9]+$">
                   </div>';
                   } elseif ($_SESSION["regis"] == "Dosen") {
                     echo '<div class="form-group">
                     <label for="nip">NIP :</label>
-                    <input type="number" class="form-control" name="nip">
+                    <input type="number" class="form-control" name="nip" pattern="^[0-9]+$">
                   </div>';
                   } elseif ($_SESSION["regis"] == "Perusahaan") {
                     echo '<div class="form-group">
                     <label for="id">ID :</label>
-                    <input type="number" class="form-control" name="id">
+                    <input type="number" class="form-control" name="id" pattern="^[0-9]+$">
                   </div>';
                   }
                   ?>
@@ -49,7 +49,7 @@ include 'config.php';
                   </div>
                   <div class="form-group">
                     <label for="password">Password :</label>
-                    <input type="password" class="form-control" name="password">
+                    <input type="password" class="form-control" name="password" pattern="^[A-Za-z0-9]+">
                   </div>
 
                   <div class="form-group">

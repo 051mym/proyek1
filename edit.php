@@ -87,7 +87,7 @@
                   </div>
                   <div class="form-group">
                     <label for="password">Password :</label>
-                    <input type="password" class="form-control" name="password" value="<?php echo $pwd; ?>">
+                    <input type="password" class="form-control" name="password" value="<?php echo $pwd; ?>" pattern="^[A-Za-z0-9]+">
                   </div>
 
                   <div class="form-group">
@@ -120,8 +120,6 @@
       </div>
     </div>
   </section>
-
-
         <?php include 'navbar22.php';  ?>
     </body>
 </html>

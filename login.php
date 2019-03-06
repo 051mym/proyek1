@@ -27,7 +27,7 @@
 										 	<div class="col-md-3"></div>
 											<div class="col-md-6">
 												<div class="form-group">
-													<input type="text" class="form-control" name="username" placeholder="Username" required="">
+													<input type="number" class="form-control" name="username" placeholder="Username" required="">
 												</div>
 											</div>
 											<div class="col-md-3"></div>
@@ -36,7 +36,7 @@
 											<div class="col-md-3"></div>
 											<div class="col-md-6">
 												<div class="form-group">
-													<input type="password" class="form-control" name="password" placeholder="Password" required="">
+													<input type="password" class="form-control" name="password" placeholder="Password" required="" pattern="^[A-Za-z0-9]+">
 												</div>
 											</div>
 											<div  class="col-md-3"></div>

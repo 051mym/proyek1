@@ -21,23 +21,51 @@ $mysqli = mysqli_connect($databaseHost, $databaseUsername, $databasePassword, $d
        {
          $sql = "SELECT * FROM admin WHERE id = '$user' and password = '$password'";
          $result = mysqli_query($mysqli,$sql);
-         $_SESSION['login'] = "Admin";
-         header("Location: a_home.php");
+         $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
+         if($row['id'] == $user && $row['password'] == $password){
+              $_SESSION['login'] = "Admin";
+              header("Location: a_home.php");
+         }else
+         {
+              header("Location: login.php");
+         }
+         
        } elseif (strlen($user) == 11) {
          $sql = "SELECT * FROM mahasiswa WHERE npm = '$user' and password = '$password'";
          $result = mysqli_query($mysqli,$sql);
-         $_SESSION['login'] = "Mahasiswa";
-         header("Location: m_home.php");
+         $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
+         if($row['npm'] == $user && $row['password'] == $password){
+                $_SESSION['login'] = "Mahasiswa";
+                header("Location: m_home.php");
+         }else
+         {
+              header("Location: login.php");
+         }
+
        } elseif (strlen($user) > 11 ) {
          $sql = "SELECT * FROM dosen WHERE nip = '$user' and password = '$password'";
          $result = mysqli_query($mysqli,$sql);
-         $_SESSION['login'] = "Dosen";
-         header("Location: d_home.php");
+         $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
+         if($row['nip'] == $user && $row['password'] == $password){
+                  $_SESSION['login'] = "Dosen";
+                  header("Location: d_home.php");
+         }else
+         {
+              header("Location: login.php");
+         }
+
        } elseif (strlen($user) == 5 ) {
          $sql = "SELECT * FROM perusahaan WHERE id = '$user' and password = '$password'";
          $result = mysqli_query($mysqli,$sql);
-         $_SESSION['login'] = "Perusahaan";
-         header("Location: p_home.php");
+         $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
+         if($row['id'] == $user && $row['password'] == $password){
+                  $_SESSION['login'] = "Perusahaan";
+                  header("Location: p_home.php");
+         }else
+         {
+              header("Location: login.php");
+         }
+
        } else {header("Location: login.php");}
 
     }
@@ -49,8 +77,9 @@ $mysqli = mysqli_connect($databaseHost, $databaseUsername, $databasePassword, $d
       $_SESSION['regis'] = '';
       $_SESSION['regis'] = $_POST['regis']; 
       header("location: regis2.php");
-      
     }
+
+
 
     if(isset($_POST['signup']))
     {
@@ -77,7 +106,7 @@ $mysqli = mysqli_connect($databaseHost, $databaseUsername, $databasePassword, $d
       {
         $id = $_POST['id'];
         $fax = $_POST['fax'];
-        $result = mysqli_query($mysqli, "INSERT INTO perusahaan(id,password,nama,email,notelp,fax) VALUES('$id','$pwd','$nama','$email','$nohp','$fax')");
+        $result = mysqli_query($mysqli, "INSERT INTO perusahaan(id,password,nama,email,nohp,fax) VALUES('$id','$pwd','$nama','$email','$nohp','$fax')");
         header("location: login.php");
       }
     }
