@@ -10,7 +10,7 @@
 				<div class="head_title text-center wow zoomIn" data-wow-duration="1s">
 					<h2>MEET OUR CREW</h2>
 					<div class="separetor"></div>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry been the industry's standard dummy text</p>
+					<p>Haii...!!!!</p>
 				</div>
 				
 				<div class="main_team_content text-center">

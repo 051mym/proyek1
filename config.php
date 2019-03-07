@@ -7,6 +7,8 @@ $databasePassword = '';
 $mysqli = mysqli_connect($databaseHost, $databaseUsername, $databasePassword, $databaseName); 
 $Err = "";
 
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   if(isset($_POST['login'])) {
     if ($_POST["vercode"] != $_SESSION["vercode"] OR $_SESSION["vercode"]=='')  {
 
@@ -66,7 +68,8 @@ $Err = "";
     }
        
   }
- 
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
   if(isset($_POST['regis']))
     {
       $_SESSION['regis'] = '';
@@ -74,29 +77,41 @@ $Err = "";
       header("location: regis2.php");
     }
 
-
-
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     if(isset($_POST['signup']))
     {
       $nama = $_POST['nama'];
       $email = $_POST['email'];
       $pwd = $_POST['password'];
       $nohp = $_POST['nohp'];
-      // $npm = $_POST['npm'];
 
-      $image = addslashes(file_get_contents($_FILES['foto']['tmp_name']));
 
     if ($_SESSION["regis"] == "Mahasiswa") 
       {
         $npm = $_POST['npm'];
-        $result = mysqli_query($mysqli, "INSERT INTO mahasiswa(npm,password,nama,email,nohp,foto) VALUES('$npm','$pwd','$nama','$email','$nohp','$image')");
+        $result = mysqli_query($mysqli, "INSERT INTO mahasiswa(npm,password,nama,email,nohp) VALUES('$npm','$pwd','$nama','$email','$nohp')");
+
+        $target_dir = "files/profile/mahasiswa/";
+        $target_file = $target_dir.'profile-'.$npm.strrchr($_FILES["foto"]["name"],'.');
+        $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+        if($imageFileType == "jpg" || $imageFileType == "png" || $imageFileType == "jpeg"){
+            move_uploaded_file($_FILES["foto"]["tmp_name"], $target_file);
+          }
         header("location: login.php");
 
       } else if ($_SESSION["regis"] == "Dosen") 
       {
         $nip = $_POST['nip'];
-        $result = mysqli_query($mysqli, "INSERT INTO dosen(nip,password,nama,email,nohp,foto) VALUES('$nip','$pwd','$nama','$email','$nohp','$image')");
+        $result = mysqli_query($mysqli, "INSERT INTO dosen(nip,password,nama,email,nohp) VALUES('$nip','$pwd','$nama','$email','$nohp')");
+
+        $target_dir = "files/profile/dosen/";
+        $target_file = $target_dir.'profile-'.$nip.strrchr($_FILES["foto"]["name"],'.');
+        $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+        if($imageFileType == "jpg" || $imageFileType == "png" || $imageFileType == "jpeg"){
+            move_uploaded_file($_FILES["foto"]["tmp_name"], $target_file);
+          }
         header("location: login.php");
+
       } else if ($_SESSION["regis"] == "Perusahaan") 
       {
         $id = $_POST['id'];
@@ -106,7 +121,7 @@ $Err = "";
       }
     }
   
-
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 if(isset($_POST['update']))
     {
@@ -120,14 +135,29 @@ if(isset($_POST['update']))
     if ($_SESSION['login'] == "Mahasiswa") 
       {
         $npm = $_POST['npm'];
-        $result = mysqli_query($mysqli, "UPDATE mahasiswa SET password='$pwd',nama='$nama',email='$email',nohp='$nohp',foto='$image' WHERE npm='$npm'");
+        $result = mysqli_query($mysqli, "UPDATE mahasiswa SET password='$pwd',nama='$nama',email='$email',nohp='$nohp' WHERE npm='$npm'");
+
+        $target_dir = "files/profile/mahasiswa/";
+        $target_file = $target_dir.'profile-'.$npm.strrchr($_FILES["foto"]["name"],'.');
+        $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+        if($imageFileType == "jpg" || $imageFileType == "png" || $imageFileType == "jpeg"){
+            move_uploaded_file($_FILES["foto"]["tmp_name"], $target_file);
+          }
         header("location: profile.php");
 
       } else if ($_SESSION['login'] == "Dosen") 
       {
         $nip = $_POST['nip'];
-        $result = mysqli_query($mysqli, "UPDATE dosen SET password='$pwd',nama='$nama',email='$email',nohp='$nohp',foto='$image' WHERE nip='$nip'");
+        $result = mysqli_query($mysqli, "UPDATE dosen SET password='$pwd',nama='$nama',email='$email',nohp='$nohp' WHERE nip='$nip'");
+
+        $target_dir = "files/profile/dosen/";
+        $target_file = $target_dir.'profile-'.$nip.strrchr($_FILES["foto"]["name"],'.');
+        $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+        if($imageFileType == "jpg" || $imageFileType == "png" || $imageFileType == "jpeg"){
+            move_uploaded_file($_FILES["foto"]["tmp_name"], $target_file);
+          }
         header("location: profile.php");
+
       } else if ($_SESSION['login'] == "Perusahaan") 
       {
         $id = $_POST['id'];
@@ -137,4 +167,5 @@ if(isset($_POST['update']))
       }
     }
 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ?>
