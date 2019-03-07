@@ -26,7 +26,7 @@
 								</div>
 							</div>
 							<div class="single_team_name">
-								<h4>@mfaizfdlh (quotes upn)</h4>
+								<h4>Galang</h4>
 							</div>
 						</div>
 					</div>
@@ -43,7 +43,7 @@
 								</div>
 							</div>
 							<div class="single_team_name">
-								<h4>@baktiar.iksan (Tuek2an upn)</h4>
+								<h4>Baktiar</h4>
 							</div>
 						</div>
 					</div>
@@ -60,7 +60,7 @@
 								</div>
 							</div>
 							<div class="single_team_name">
-								<h4>@nova_nf (cantik upn)</h4>
+								<h4>Faiz</h4>
 							</div>
 						</div>
 					</div>
@@ -79,7 +79,7 @@
 								</div>
 							</div>
 							<div class="single_team_name">
-								<h4>@devitapuspa (cumloude upn) </h4>
+								<h4>Nova</h4>
 							</div>
 						</div>
 					</div>
@@ -95,7 +95,7 @@
 								</div>
 							</div>
 							<div class="single_team_name">
-								<h4>@Galangka (cogan upn)</h4>
+								<h4>Devita</h4>
 							</div>
 						</div>
 					</div>

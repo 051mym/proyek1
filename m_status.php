@@ -18,8 +18,12 @@
 						<tr>
 							<th>Id Pengajuan</th>
 							<th>NPM</th>
-							<th>Nama Perusahaan</th>
+							<th>Perusahaan</th>
+							<th>Dosen</th>
 							<th>Status</th>
+							<th>Acc Admin</th>
+							<th>Acc Dosen</th>
+							<th>Acc Perusahaan</th>
 						</tr>
 					</thead>
 						<tbody>
@@ -32,7 +36,11 @@
 								<td>'.$row['id'].'</td>
 								<td>'.$row['npm'].'</td>
 								<td>'.$row['perusahaan'].'</td>
+								<td>'.$row['dosen'].'</td>
 								<td>'.$row['status'].'</td>
+								<td>'.$row['tglaccadmin'].'</td>
+								<td>'.$row['tglaccdosen'].'</td>
+								<td>'.$row['tglaccadmin'].'</td>
 								</tr>';      
 								}      
 							?>

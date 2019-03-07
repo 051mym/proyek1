@@ -187,7 +187,12 @@ if(isset($_POST['update']))
             move_uploaded_file($_FILES["berkasproposal"]["tmp_name"], $target_file);
           }
 
-          //QUERY NYA
+        $perusahaan = $_POST['perusahaan'];
+        $dosen = $_POST['dosen'];
+        $user = $_SESSION['login_user'];
+        $result = mysqli_query($mysqli, "INSERT INTO pengajuanpkl (npm,perusahaan,dosen,tglpengajuan) VALUES('$user','$perusahaan','$dosen',now())");
+        header("location: m_status.php");
+
     }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

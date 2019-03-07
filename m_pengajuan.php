@@ -18,8 +18,8 @@
 			          	<div class="form-group">
 			            <label for="perusahaan" class="control-label col-sm-2">Perusahaan :</label>
 			            <div class="col-sm-10">
-				            <select name="perusahaan" class="form-control dropdown-toggle">
-				         		<option value="NULL" selected >Pilih Perusahaan</option>
+				            <select required name="perusahaan" class="form-control dropdown-toggle">
+				         		<option value="" selected >Pilih Perusahaan</option>
 						            <?php
 						              $result = mysqli_query($mysqli, "SELECT * FROM perusahaan ");
 						              if ($result->num_rows > 0) {
@@ -34,10 +34,10 @@
 				        </div>
 			          	</div>
 			          	<div class="form-group">
-			            <label for="dospem" class="control-label col-sm-2">Dospem :</label>
+			            <label for="dosen" class="control-label col-sm-2">Dospem :</label>
 			            <div class="col-sm-10">
-				            <select name="perusahaan" class="form-control dropdown-toggle">
-				         		<option value="NULL" selected >Pilih Dosen Pembimbing</option>
+				            <select required name="dosen" class="form-control dropdown-toggle">
+				         		<option value="" selected >Pilih Dosen Pembimbing</option>
 						            <?php
 						              $result = mysqli_query($mysqli, "SELECT * FROM dosen ");
 						              if ($result->num_rows > 0) {
@@ -55,14 +55,14 @@
 			          	<div class="form-group"> 
 			          	<label for="berkasuniv" class="control-label col-sm-2">Berkas Universitas :</label>
 					    <div class="col-sm-offset-2 col-sm-10">
-					      <input type="file" class="form-control-file" name="berkasuniv">
+					      <input required type="file" class="form-control-file" name="berkasuniv">
 					    </div>
 					  </div>
 
 					  <div class="form-group">
 					  	<label for="berkasproposa" class="control-label col-sm-2">Berkas Proposal :</label>
 					    <div class="col-sm-offset-2 col-sm-10">
-					      <input type="file" class="form-control-file" name="berkasproposal">
+					      <input required type="file" class="form-control-file" name="berkasproposal">
 					    </div>
 					  </div>
 
