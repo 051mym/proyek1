@@ -13,7 +13,7 @@
 					<p>Isi data-data berikut untuk mengajukan Praktik Kerja Lapangan</p>
 				</div><br>
 				<div>									
-					<form class="form-horizontal" method="post">
+					<form class="form-horizontal" method="post" enctype="multipart/form-data">
 
 			          	<div class="form-group">
 			            <label for="perusahaan" class="control-label col-sm-2">Perusahaan :</label>

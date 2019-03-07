@@ -168,4 +168,27 @@ if(isset($_POST['update']))
     }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  if(isset($_POST['m_pengajuan']))
+    {
+      $npm=$_SESSION['login_user'];
+
+        $target_dir = "files/berkas/berkasuniv/";
+        $target_file = $target_dir.'berkasuniv-'.$npm.strrchr($_FILES["berkasuniv"]["name"],'.');
+        $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+        if($imageFileType == "pdf"){
+            move_uploaded_file($_FILES["berkasuniv"]["tmp_name"], $target_file);
+          }
+
+          
+        $target_dir = "files/berkas/berkasproposal/";
+        $target_file = $target_dir.'berkasproposal-'.$npm.strrchr($_FILES["berkasproposal"]["name"],'.');
+        $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+        if($imageFileType == "pdf"){
+            move_uploaded_file($_FILES["berkasproposal"]["tmp_name"], $target_file);
+          }
+
+          //QUERY NYA
+    }
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ?>
