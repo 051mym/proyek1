@@ -1,6 +1,6 @@
 <?php
 
-session_start(); 
+// session_start(); 
 $databaseHost = 'localhost';
 $databaseName = 'pkl';
 $databaseUsername = 'root';
@@ -24,7 +24,7 @@ $Err = "";
          $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
              if($row['id'] == $user && $row['password'] == $password){
                   $_SESSION['login'] = "Admin";
-                  header("Location: a_home.php");
+                  header("Location: home.php");
              }else if ($row['id'] != $user && $row['password'] != $password) {
                      $Err = '<div class="alert alert-danger"> ID dan Password salah. </div>';
              }
@@ -35,7 +35,7 @@ $Err = "";
          $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
              if($row['npm'] == $user && $row['password'] == $password){
                     $_SESSION['login'] = "Mahasiswa";
-                    header("Location: m_home.php");
+                    header("Location: home.php");
              }else if ($row['npm'] != $user && $row['password'] != $password) {
                      $Err = '<div class="alert alert-danger"> NPM dan Password salah. </div>';
              }
@@ -46,7 +46,7 @@ $Err = "";
          $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
              if($row['nip'] == $user && $row['password'] == $password){
                       $_SESSION['login'] = "Dosen";
-                      header("Location: d_home.php");
+                      header("Location: home.php");
              }else if ($row['nip'] != $user && $row['password'] != $password) {
                      $Err = '<div class="alert alert-danger"> NIP dan Password salah. </div>';
              }
@@ -57,7 +57,7 @@ $Err = "";
          $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
              if($row['id'] == $user && $row['password'] == $password){
                       $_SESSION['login'] = "Perusahaan";
-                      header("Location: p_home.php");
+                      header("Location: home.php");
              }else if ($row['id'] != $user && $row['password'] != $password) {
                      $Err = '<div class="alert alert-danger"> ID dan Password salah. </div>';
              }
