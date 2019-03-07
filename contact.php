@@ -14,25 +14,11 @@
 				</div>
 				
 				<div class="main_team_content text-center">
+
 					<div class="col-md-3 col-sm-6 col-xs-12">
-						<div class="single_team wow fadeIn" data-wow-duration="0.5s">
+						<div class="single_team wow fadeIn" data-wow-duration="1.5s">
 							<div class="single_team_img">
-								<img src="images/tm1.jpg" alt="" />
-								<div class="single_team_overlay text-center">
-									<p>Hi ! I m Redwan from bangladesh.I am a Professional graphic designer & expert on print and UI/ UX .</p>
-									<a href=""><i class="fa fa-facebook"></i></a>
-									<a href=""><i class="fa fa-linkedin"></i></a>
-								</div>
-							</div>
-							<div class="single_team_name">
-								<h4>@Galangka (cogan upn)</h4>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-6 col-xs-12">
-						<div class="single_team wow fadeIn" data-wow-duration="1s">
-							<div class="single_team_img">
-								<img src="images/tm2.jpg" alt="" />
+								<img src="images/2.jpg" alt="" width="517" height="330" />
 								<div class="single_team_overlay text-center">
 									<p>Hi ! I m Redwan from bangladesh.I am a Professional graphic designer & expert on print and UI/ UX .</p>
 									<a href=""><i class="fa fa-facebook"></i></a>
@@ -44,10 +30,11 @@
 							</div>
 						</div>
 					</div>
+					<div class="col-md-1" ></div>
 					<div class="col-md-3 col-sm-6 col-xs-12">
-						<div class="single_team wow fadeIn" data-wow-duration="1.5s">
+						<div class="single_team wow fadeIn" data-wow-duration="2s">
 							<div class="single_team_img">
-								<img src="images/tm3.jpg" alt="" />
+								<img src="images/3.jpg" alt="" width="517" height="330"/>
 								<div class="single_team_overlay text-center">
 									<p>Hi ! I m Redwan from bangladesh.I am a Professional graphic designer & expert on print and UI/ UX .</p>
 									<p></p>
@@ -60,10 +47,11 @@
 							</div>
 						</div>
 					</div>
+					<div class="col-md-1" ></div>
 					<div class="col-md-3 col-sm-6 col-xs-12">
-						<div class="single_team wow fadeIn" data-wow-duration="2s">
+						<div class="single_team wow fadeIn" data-wow-duration="2.5s">
 							<div class="single_team_img">
-								<img src="images/tm3.jpg" alt="" />
+								<img src="images/4.jpg" alt="" width="517" height="330" />
 								<div class="single_team_overlay text-center">
 									<p>Hi ! I m Redwan from bangladesh.I am a Professional graphic designer & expert on print and UI/ UX .</p>
 									<p></p>
@@ -76,10 +64,14 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 col-sm-6 col-xs-6">
-						<div class="single_team wow fadeIn" data-wow-duration="2.5s">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-2" ></div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="single_team wow fadeIn" data-wow-duration="3s">
 							<div class="single_team_img">
-								<img src="images/tm4.jpg" alt="" />
+								<img src="images/5.png" alt="" width="517" height="330" />
 								<div class="single_team_overlay text-center">
 									<p>Hi ! I m Redwan from bangladesh.I am a Professional graphic designer & expert on print and UI/ UX .</p>
 									<a href=""><i class="fa fa-facebook"></i></a>
@@ -91,7 +83,23 @@
 							</div>
 						</div>
 					</div>
-				</div>
+					<div class="col-md-1" ></div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="single_team wow fadeIn" data-wow-duration="3.5s">
+							<div class="single_team_img">
+								<img src="images/1.jpg" alt="" width="517" height="330" />
+								<div class="single_team_overlay text-center">
+									<p>Hi ! I m Redwan from bangladesh.I am a Professional graphic designer & expert on print and UI/ UX .</p>
+									<a href=""><i class="fa fa-facebook"></i></a>
+									<a href=""><i class="fa fa-linkedin"></i></a>
+								</div>
+							</div>
+							<div class="single_team_name">
+								<h4>@Galangka (cogan upn)</h4>
+							</div>
+						</div>
+					</div>
+				
 			</div>
 		</div>
 	</section>

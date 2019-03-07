@@ -21,56 +21,19 @@
 									
 									<div class="col-md-6 col-sm-6 col-xs-12">
 										<div class="single_abouts wow fadeInLeft" data-wow-duration="1s">
-											<div class="single_left_icon">
-												<a href=""><i class="fa fa-star"></i></a>
-											</div>
-											
-											<div class="single_right_text">
-												<h4>UI / UX DESIGN</h4>
-												<div class="separetor2"></div>
-												<p>Lorem Ipsum is simply dummy text thprinting andthe industry's standard dummy text lorem Ipsum is simply dummy</p>
+											<div class="row">
+												<img src="images/g1.png" alt="Galeri PKL" width="517" height="409">
 											</div>
 										</div>
 									</div>
 									<div class="col-md-6 col-sm-6 col-xs-12">
 										<div class="single_abouts wow fadeInRight" data-wow-duration="1s">
-											<div class="single_left_icon">
-												<a href=""><i class="fa fa-star"></i></a>
-											</div>
-											
-											<div class="single_right_text">
-												<h4>UI / UX DESIGN</h4>
-												<div class="separetor2"></div>
-												<p>Lorem Ipsum is simply dummy text thprinting andthe industry's standard dummy text lorem Ipsum is simply dummy</p>
+											<div class="row">
+												<img src="images/g2.jpg" alt="Galeri PKL" width="517" height="409">
 											</div>
 										</div>
 									</div>
-									<div class="col-md-6 col-sm-6 col-xs-12">
-										<div class="single_abouts wow fadeInLeft" data-wow-duration="1s">
-											<div class="single_left_icon">
-												<a href=""><i class="fa fa-star"></i></a>
-											</div>
-											
-											<div class="single_right_text">
-												<h4>UI / UX DESIGN</h4>
-												<div class="separetor2"></div>
-												<p>Lorem Ipsum is simply dummy text thprinting andthe industry's standard dummy text lorem Ipsum is simply dummy</p>
-											</div>
-										</div>
-									</div>
-									<div class="col-md-6 col-sm-6 col-xs-12">
-										<div class="single_abouts wow fadeInRight" data-wow-duration="1s">
-											<div class="single_left_icon">
-												<a href=""><i class="fa fa-star"></i></a>
-											</div>
-											
-											<div class="single_right_text">
-												<h4>UI / UX DESIGN</h4>
-												<div class="separetor2"></div>
-												<p>Lorem Ipsum is simply dummy text thprinting andthe industry's standard dummy text lorem Ipsum is simply dummy</p>
-											</div>
-										</div>
-									</div>
+
 								</div>
 							</div>
 						</div>
