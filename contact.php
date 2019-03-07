@@ -67,6 +67,7 @@
 				</div>
 			</div>
 			<div class="row">
+				<div class="main_team_content text-center">
 				<div class="col-md-2" ></div>
 					<div class="col-md-3 col-sm-6 col-xs-12">
 						<div class="single_team wow fadeIn" data-wow-duration="3s">
@@ -99,7 +100,7 @@
 							</div>
 						</div>
 					</div>
-				
+				</div>
 			</div>
 		</div>
 	</section>
