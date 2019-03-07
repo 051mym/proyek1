@@ -1,6 +1,5 @@
 <?php
-
-// session_start(); 
+session_start(); 
 $databaseHost = 'localhost';
 $databaseName = 'pkl';
 $databaseUsername = 'root';
@@ -115,7 +114,6 @@ if(isset($_POST['update']))
       $email = $_POST['email'];
       $pwd = $_POST['password'];
       $nohp = $_POST['nohp'];
-      // $npm = $_POST['npm'];
 
       $image = addslashes(file_get_contents($_FILES['foto']['tmp_name']));
 

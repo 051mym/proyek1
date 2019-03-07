@@ -1,5 +1,3 @@
-
-	<?php include'config.php';?>
 	<header id="home" class="header">
 		<div class="main_menu_bg navbar-fixed-top">
 			<div class="container">

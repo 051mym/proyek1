@@ -5,7 +5,7 @@ include 'config.php';
 <html>
 <?php include 'head.php';?>
 <body>
-  
+<?php include 'navbar.php';?>
   <section id="team" class="team">
     <div class="container">
       <div class="row">
@@ -60,7 +60,7 @@ include 'config.php';
                   if ($_SESSION["regis"] != "Perusahaan") {
                     echo '<div class="form-group">
                     <label for="foto">Foto :</label>
-                    <input type="file" class="form-control" name="foto" >
+                    <input type="file" class="form-control-file" name="foto" > Maks 2.048 KB
                   </div>';
                   } else {
                     # code...

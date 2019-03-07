@@ -1,3 +1,4 @@
+<?php include'config.php';?>
 <!DOCTYPE html>
 <html>
 <?php include 'head.php';?>
@@ -51,8 +52,19 @@
 				        </div>
 			          	</div>
 			          	<!-- upload file -->
+			          	<div class="form-group"> 
+			          	<label for="berkasuniv" class="control-label col-sm-2">Berkas Universitas :</label>
+					    <div class="col-sm-offset-2 col-sm-10">
+					      <input type="file" class="form-control-file" name="berkasuniv">
+					    </div>
+					  </div>
 
-
+					  <div class="form-group">
+					  	<label for="berkasproposa" class="control-label col-sm-2">Berkas Proposal :</label>
+					    <div class="col-sm-offset-2 col-sm-10">
+					      <input type="file" class="form-control-file" name="berkasproposal">
+					    </div>
+					  </div>
 
 			          	<!-- upload file -->
 					  <div class="form-group"> 

@@ -1,11 +1,11 @@
 <?php
-include "config.php";
+include 'config.php';
 ?>
 <!DOCTYPE html>
 <html>
 <?php include 'head.php';?>
 <body>
-	
+<?php include 'navbar.php';?>	
 <section id="contacts" class="team">
 		<div class="container">
 			<form method="post">
