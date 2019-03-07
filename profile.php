@@ -59,7 +59,7 @@
 												echo '<p>Fax	:	'.$fax.'</p>';
 											}
 											?>
-											<a href="edit.php"><i class="fa fa-gears" ></i></a>
+											<a href="edit.php"><i class="fa fa-gears"></i> Edit Profile</a>
 
 										</div>
 									</div>
