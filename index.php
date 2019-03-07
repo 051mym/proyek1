@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<?php include 'head.php'; $_SESSION['login']=''; ?>
+<?php include 'head.php'; session_start();  $_SESSION['login'] =''; ?>
 <body>
 <div class='preloader'><div class='loaded'>&nbsp;</div></div>
 <?php include 'navbar.php';?>
