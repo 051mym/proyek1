@@ -46,9 +46,9 @@
 							echo '
 								<tr>
 								<td>'.$row['id'].'</td>
-								<td>'.$row['perusahaan'].'</td>
-								<td>'.$row['admin'].'</td>
-								<td>'.$row['dosen'].'</td>
+								<td>'.$row['pnama'].'</td>
+								<td>'.$row['anama'].'</td>
+								<td>'.$row['dnama'].'</td>
 								<td>'.$status.'</td>
 								<td>'.$row['tglpengajuan'].'</td>
 								<td>'.$row['tglaccadmin'].'</td>

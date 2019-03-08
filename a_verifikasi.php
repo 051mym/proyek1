@@ -34,12 +34,12 @@
 								<form method="POST">
 								<td>'.$row['id'].'</td>
 								<td>'.$row['npm'].'</td>
-								<td>'.$row['perusahaan'].'</td>
-								<td>'.$row['dosen'].'</td>
+								<td>'.$row['pnama'].'</td>
+								<td>'.$row['dnama'].'</td>
 								<td>'.$row['tglpengajuan'].'</td>
 								<input type="hidden" name="id" readonly value="'.$row['id'].'">
-                            	<td><input type="Submit" class="btn btn-link" value="Accept " name="accept">|<input type="Submit" class="btn btn-link" value=" Deceline" name="deceline"></td>
-								<td></td>
+                            	<td><input type="Submit" class="form-control" value="Accept " name="accept"></td>
+								<td><input type="Submit" class="form-control" value=" Deceline" name="deceline"></td>
 								</form>
 								</tr>';      
 								}      

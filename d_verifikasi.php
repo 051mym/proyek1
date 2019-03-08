@@ -40,8 +40,8 @@
 								<td>'.$row['tglpengajuan'].'</td>
 								<td>'.$row['tglaccadmin'].'</td>
 								<input type="hidden" name="id" readonly value="'.$row['id'].'">
-                            	<td><input type="Submit" class="btn btn-link" value="Accept " name="accept">|<input type="Submit" class="btn btn-link" value=" Deceline" name="deceline"></td>
-								<td></td>
+                            	<td><input type="Submit" class="form-control" value="Accept " name="accept"></td>
+								<td><input type="Submit" class="form-control" value=" Deceline" name="deceline"></td>
 								</form>
 								</tr>';      
 								}      

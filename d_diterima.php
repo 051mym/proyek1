@@ -28,7 +28,7 @@
 						<tbody>
 							<?php 
 							$user = $_SESSION['login_user'];
-							$result = mysqli_query($mysqli, "SELECT * FROM pengajuanpkl WHERE dosen='$user' AND status > 3");
+							$result = mysqli_query($mysqli, "SELECT * FROM pengajuanpkl WHERE dosen='$user' AND status > 2");
 							 while($row = $result->fetch_assoc()){
 							echo '
 								<tr>

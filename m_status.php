@@ -39,9 +39,9 @@
 								} elseif ($row['status'] == "3") {
 									$status = "Diproses Perusahaan";
 								} elseif ($row['status'] == "4") {
-									$status = "PKL diterima";
+									$status = "Diterima";
 								} else {
-									$status = "PKL ditolak";
+									$status = "Ditolak";
 								}
 							echo '
 								<tr>

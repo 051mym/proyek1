@@ -9,7 +9,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="head_title text-center wow zoomIn" data-wow-duration="0.5s">
-					<h2>Status Pengajuan Praktik Kerja Lapangan</h2>
+					<h2>Pengajuan Praktik Kerja Lapangan</h2>
 					<div class="separetor"></div>
 				</div><br>
 				<div>

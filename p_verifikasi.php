@@ -9,7 +9,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="head_title text-center wow zoomIn" data-wow-duration="0.5s">
-					<h2>Status Pengajuan Praktik Kerja Lapangan</h2>
+					<h2>Daftar Praktik Kerja Lapangan</h2>
 					<div class="separetor"></div>
 				</div><br>
 				<div>
@@ -42,8 +42,8 @@
 								<td>'.$row['tglaccadmin'].'</td>
 								<td>'.$row['tglaccdosen'].'</td>
 								<input type="hidden" name="id" readonly value="'.$row['id'].'">
-                            	<td><input type="Submit" class="btn btn-link" value="Accept " name="accept">|<input type="Submit" class="btn btn-link" value=" Deceline" name="deceline"></td>
-								<td></td>
+                            	<td><input type="Submit" class="form-control" value="Accept " name="accept"></td>
+								<td><input type="Submit" class="form-control" value=" Deceline" name="deceline"></td>
 								</form>
 								</tr>';      
 								}      
