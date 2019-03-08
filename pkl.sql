@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.5
+-- version 4.8.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 08, 2019 at 03:11 AM
--- Server version: 10.1.38-MariaDB
--- PHP Version: 7.3.2
+-- Generation Time: Mar 08, 2019 at 03:43 AM
+-- Server version: 10.1.34-MariaDB
+-- PHP Version: 7.2.8
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -29,7 +29,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `admin` (
-  `id` int(11) NOT NULL,
+  `id` char(3) NOT NULL,
   `password` varchar(16) NOT NULL,
   `nama` varchar(25) NOT NULL,
   `email` varchar(25) NOT NULL,
@@ -41,7 +41,7 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id`, `password`, `nama`, `email`, `nohp`) VALUES
-(1, 'adminonly', 'Admin 1', 'admin1@gmail.com', '08514796325');
+('1', 'adminonly', 'Admin 1', 'admin1@gmail.com', '08514796325');
 
 -- --------------------------------------------------------
 
@@ -62,6 +62,7 @@ CREATE TABLE `dosen` (
 --
 
 INSERT INTO `dosen` (`nip`, `password`, `nama`, `email`, `nohp`) VALUES
+('12345678909876', '12345678', 'dosen w', 'dani@gmail.com', '65432'),
 ('123456789098765', '123', 'dosen q', 'dosen@gmail.com', '2147483647');
 
 -- --------------------------------------------------------
@@ -99,7 +100,7 @@ INSERT INTO `mahasiswa` (`npm`, `password`, `nama`, `email`, `nohp`) VALUES
 
 CREATE TABLE `pengajuanberhasil` (
   `id` int(11) NOT NULL,
-  `npm` varchar(10) NOT NULL,
+  `npm` char(11) NOT NULL,
   `perusahaan` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -112,9 +113,9 @@ CREATE TABLE `pengajuanberhasil` (
 CREATE TABLE `pengajuanpkl` (
   `id` int(11) NOT NULL,
   `npm` char(11) DEFAULT NULL,
-  `perusahaan` int(11) DEFAULT NULL,
-  `admin` int(11) DEFAULT NULL,
-  `dosen` char(30) DEFAULT NULL,
+  `perusahaan` char(25) DEFAULT NULL,
+  `admin` char(25) DEFAULT NULL,
+  `dosen` char(25) DEFAULT NULL,
   `status` int(11) DEFAULT NULL,
   `tglpengajuan` timestamp NULL DEFAULT NULL,
   `tglaccadmin` timestamp NULL DEFAULT NULL,
@@ -127,7 +128,7 @@ CREATE TABLE `pengajuanpkl` (
 --
 
 INSERT INTO `pengajuanpkl` (`id`, `npm`, `perusahaan`, `admin`, `dosen`, `status`, `tglpengajuan`, `tglaccadmin`, `tglaccdosen`, `tglaccperusahaan`) VALUES
-(1, '55555555555', 11111, 1, '123456789098765', 4, '2019-03-07 16:27:34', '2019-03-08 01:45:38', '2019-03-08 02:06:50', '2019-03-08 02:08:38');
+(6, '12345678909', 'PT. Eka Manju', NULL, 'dosen w', 1, '2019-03-08 02:42:20', NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -136,7 +137,7 @@ INSERT INTO `pengajuanpkl` (`id`, `npm`, `perusahaan`, `admin`, `dosen`, `status
 --
 
 CREATE TABLE `perusahaan` (
-  `id` int(11) NOT NULL,
+  `id` char(10) NOT NULL,
   `password` varchar(16) NOT NULL,
   `nama` varchar(50) NOT NULL,
   `email` varchar(25) NOT NULL,
@@ -150,11 +151,11 @@ CREATE TABLE `perusahaan` (
 --
 
 INSERT INTO `perusahaan` (`id`, `password`, `nama`, `email`, `nohp`, `fax`, `jmlmhs`) VALUES
-(11111, '123', 'PT. Eka Manju', 'ekamaju@gmail.com', '98098', '123456', 0),
-(22222, '123', 'PT. Ajinomoto', 'ajinomoto@gmail.com', '98765', '123456', 0),
-(33333, '123', 'PT. Elang Sakti', 'elangsakti@gmail.com', '98754', '123456', 0),
-(44444, '123', 'PT. Jaya Sakti', 'jayasakti@gmail.com', '42367', '123456', 0),
-(55555, '123', 'PT. Maju tak Gentar', 'majutakgentar@gmail.com', '257432', '123456', 0);
+('11111', '123', 'PT. Eka Manju', 'ekamaju@gmail.com', '98098', '123456', 0),
+('22222', '123', 'PT. Ajinomoto', 'ajinomoto@gmail.com', '98765', '123456', 0),
+('33333', '123', 'PT. Elang Sakti', 'elangsakti@gmail.com', '98754', '123456', 0),
+('44444', '123', 'PT. Jaya Sakti', 'jayasakti@gmail.com', '42367', '123456', 0),
+('55555', '123', 'PT. Maju tak Gentar', 'majutakgentar@gmail.com', '257432', '123456', 0);
 
 --
 -- Indexes for dumped tables
@@ -198,7 +199,7 @@ ALTER TABLE `perusahaan`
 -- AUTO_INCREMENT for table `pengajuanpkl`
 --
 ALTER TABLE `pengajuanpkl`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
