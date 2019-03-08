@@ -68,9 +68,7 @@ $Err = "";
              }
 
        } else {header("Location: login.php");}
-
-    }
-       
+    }   
   }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
@@ -82,7 +80,7 @@ $Err = "";
     }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    if(isset($_POST['signup']))
+  if(isset($_POST['signup']))
     {
       $nama = $_POST['nama'];
       $email = $_POST['email'];
@@ -205,7 +203,7 @@ if(isset($_POST['update']))
     }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-      if(isset($_POST['accept']))
+  if(isset($_POST['accept']))
     { 
       $id = $_POST['id'];
       $user=$_SESSION['login_user'];
@@ -223,11 +221,9 @@ if(isset($_POST['update']))
           $result = mysqli_query($mysqli, "UPDATE pengajuanpkl SET status='4',tglaccperusahaan=now() WHERE id='$id'");
           header("Location: p_verifikasi.php");
       }
-
-
     }
 
-      if(isset($_POST['deceline']))
+  if(isset($_POST['deceline']))
     {
       $id = $_POST['id'];
       $user=$_SESSION['login_user'];
@@ -243,8 +239,20 @@ if(isset($_POST['update']))
           $result = mysqli_query($mysqli, "UPDATE pengajuanpkl SET status='5',tglaccdosen=now() WHERE id='$id'");
           header("Location: p_verifikasi.php");
       }
-
-
     }
-    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    if(isset($_POST['p_persetujuan']))
+    {
+        $user=$_SESSION['login_user'];
+        $target_dir = "files/berkas/berkasperusahaan/";
+        $target_file = $target_dir.'berkasperusahaan-'.$user.strrchr($_FILES["berkasperusahaan"]["name"],'.');
+        $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+        if($imageFileType == "pdf"){
+            move_uploaded_file($_FILES["berkasperusahaan"]["tmp_name"], $target_file);
+          }
+        header("Location: p_persetujuan.php");
+    }
+
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ?>
