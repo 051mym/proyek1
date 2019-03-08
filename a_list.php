@@ -9,7 +9,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="head_title text-center wow zoomIn" data-wow-duration="0.5s">
-					<h2>Pengajuan Praktik Kerja Lapangan</h2>
+					<h2>Daftar Praktik Kerja Lapangan</h2>
 					<div class="separetor"></div>
 				</div><br>
 				<div>
@@ -17,30 +17,43 @@
 					<thead>
 						<tr>
 							<th>Id Pengajuan</th>
-							<th>NPM</th>
 							<th>Perusahaan</th>
+							<th>Admin</th>
 							<th>Dosen Pembimbing</th>
+							<th>Status</th>
 							<th>Proses Pengajuan</th>
-							<th>Action</th>
+							<th>Proses Admin</th>
+							<th>Proses Dosen</th>
+							<th>Proses Perusahaan</th>
 						</tr>
 					</thead>
 						<tbody>
 							<?php 
 							$user = $_SESSION['login_user'];
-							$result = mysqli_query($mysqli, "SELECT * FROM pengajuanpkl WHERE status='1' ORDER BY id ASC ");
-							 while($row = $result->fetch_assoc()){
+							$result = mysqli_query($mysqli, "SELECT * FROM pengajuanpkl WHERE status > 1");
+							while($row = mysqli_fetch_array($result)) {
+								if ($row['status'] == "1") {
+									$status = "Diproses Admin";
+								} elseif ($row['status'] == "2") {
+									$status = "Diproses Dosen";
+								} elseif ($row['status'] == "3") {
+									$status = "Diproses Perusahaan";
+								} elseif ($row['status'] == "4") {
+									$status = "PKL diterima";
+								} else {
+									$status = "PKL ditolak";
+								}
 							echo '
 								<tr>
-								<form method="POST">
 								<td>'.$row['id'].'</td>
-								<td>'.$row['npm'].'</td>
 								<td>'.$row['perusahaan'].'</td>
+								<td>'.$row['admin'].'</td>
 								<td>'.$row['dosen'].'</td>
+								<td>'.$status.'</td>
 								<td>'.$row['tglpengajuan'].'</td>
-								<input type="hidden" name="id" readonly value="'.$row['id'].'">
-                            	<td><input type="Submit" class="btn btn-link" value="Accept " name="accept">|<input type="Submit" class="btn btn-link" value=" Deceline" name="deceline"></td>
-								<td></td>
-								</form>
+								<td>'.$row['tglaccadmin'].'</td>
+								<td>'.$row['tglaccdosen'].'</td>
+								<td>'.$row['tglaccperusahaan'].'</td>
 								</tr>';      
 								}      
 							?>

@@ -9,7 +9,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="head_title text-center wow zoomIn" data-wow-duration="0.5s">
-					<h2>Pengajuan Praktik Kerja Lapangan</h2>
+					<h2> Daftar PKL yg diterima</h2>
 					<div class="separetor"></div>
 				</div><br>
 				<div>
@@ -19,15 +19,16 @@
 							<th>Id Pengajuan</th>
 							<th>NPM</th>
 							<th>Perusahaan</th>
-							<th>Dosen Pembimbing</th>
+							<th>Admin</th>
 							<th>Proses Pengajuan</th>
-							<th>Action</th>
+							<th>Diproses Admin</th>
+							<th>Status</th>
 						</tr>
 					</thead>
 						<tbody>
 							<?php 
 							$user = $_SESSION['login_user'];
-							$result = mysqli_query($mysqli, "SELECT * FROM pengajuanpkl WHERE status='1' ORDER BY id ASC ");
+							$result = mysqli_query($mysqli, "SELECT * FROM pengajuanpkl WHERE dosen='$user' AND status > 3");
 							 while($row = $result->fetch_assoc()){
 							echo '
 								<tr>
@@ -35,11 +36,10 @@
 								<td>'.$row['id'].'</td>
 								<td>'.$row['npm'].'</td>
 								<td>'.$row['perusahaan'].'</td>
-								<td>'.$row['dosen'].'</td>
+								<td>'.$row['admin'].'</td>
 								<td>'.$row['tglpengajuan'].'</td>
-								<input type="hidden" name="id" readonly value="'.$row['id'].'">
-                            	<td><input type="Submit" class="btn btn-link" value="Accept " name="accept">|<input type="Submit" class="btn btn-link" value=" Deceline" name="deceline"></td>
-								<td></td>
+								<td>'.$row['tglaccadmin'].'</td>
+                            	<td>Diterima</td>
 								</form>
 								</tr>';      
 								}      

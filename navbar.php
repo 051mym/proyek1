@@ -36,10 +36,10 @@
                                         <a href="a_verifikasi.php">Verifikasi data PKL</a>
                                     </li>
                                     <li>
-                                        <a href="#">List PKL</a>
+                                        <a href="a_list.php">List PKL</a>
                                     </li>
                                     <li>
-                                        <a href="#">Manage Database</a>
+                                        <a href="a_database.php">Manage Database</a>
                                     </li>
                                     <li>
                         			<a href="logout.php">Logout</a>
@@ -75,7 +75,7 @@
                                         <a href="d_verifikasi.php">Pengajuan Mahasiswa PKL</a>
                                     </li>
                                     <li>
-                                        <a href="#">Pengajuan Diterima</a>
+                                        <a href="d_diterima.php">Pengajuan Diterima</a>
                                     </li>
                                     <li>
                         			<a href="logout.php">Logout</a>
@@ -96,7 +96,7 @@
                                         <a href="p_verifikasi.php">Pengajuan Mahasiswa PKL</a>
                                     </li>
                                     <li>
-                                        <a href="#">Pengajuan Diterima</a>
+                                        <a href="p_diterima.php">Pengajuan Diterima</a>
                                     </li>
                                     <li>
                         			<a href="logout.php">Logout</a>

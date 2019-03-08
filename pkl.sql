@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 08, 2019 at 03:43 AM
+-- Generation Time: Mar 08, 2019 at 07:14 AM
 -- Server version: 10.1.34-MariaDB
 -- PHP Version: 7.2.8
 
@@ -120,15 +120,18 @@ CREATE TABLE `pengajuanpkl` (
   `tglpengajuan` timestamp NULL DEFAULT NULL,
   `tglaccadmin` timestamp NULL DEFAULT NULL,
   `tglaccdosen` timestamp NULL DEFAULT NULL,
-  `tglaccperusahaan` timestamp NULL DEFAULT NULL
+  `tglaccperusahaan` timestamp NULL DEFAULT NULL,
+  `pnama` char(25) NOT NULL,
+  `dnama` char(25) NOT NULL,
+  `anama` char(25) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `pengajuanpkl`
 --
 
-INSERT INTO `pengajuanpkl` (`id`, `npm`, `perusahaan`, `admin`, `dosen`, `status`, `tglpengajuan`, `tglaccadmin`, `tglaccdosen`, `tglaccperusahaan`) VALUES
-(6, '12345678909', 'PT. Eka Manju', NULL, 'dosen w', 1, '2019-03-08 02:42:20', NULL, NULL, NULL);
+INSERT INTO `pengajuanpkl` (`id`, `npm`, `perusahaan`, `admin`, `dosen`, `status`, `tglpengajuan`, `tglaccadmin`, `tglaccdosen`, `tglaccperusahaan`, `pnama`, `dnama`, `anama`) VALUES
+(11, '12345678909', '22222', '1', '12345678909876', 2, '2019-03-08 06:01:12', '2019-03-08 06:13:41', NULL, NULL, 'PT. Ajinomoto', 'dosen w', 'Admin 1');
 
 -- --------------------------------------------------------
 
@@ -199,7 +202,7 @@ ALTER TABLE `perusahaan`
 -- AUTO_INCREMENT for table `pengajuanpkl`
 --
 ALTER TABLE `pengajuanpkl`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

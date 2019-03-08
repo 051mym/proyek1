@@ -25,7 +25,7 @@
 						              if ($result->num_rows > 0) {
 						              while($row = $result->fetch_assoc()) {
 						                  echo '
-						                        <option value="'.$row['nama'].'">'.$row['nama'].'</option>
+						                        <option value="'.$row['id'].'">'.$row['nama'].'</option>
 						                       ';
 						                }
 						            }
@@ -43,7 +43,7 @@
 						              if ($result->num_rows > 0) {
 						              while($row = $result->fetch_assoc()) {
 						                  echo '
-						                        <option value="'.$row['nama'].'">'.$row['nama'].'</option>
+						                        <option value="'.$row['nip'].'">'.$row['nama'].'</option>
 						                       ';
 						                }
 						            }

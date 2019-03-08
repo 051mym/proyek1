@@ -32,13 +32,24 @@
 							$user = $_SESSION['login_user'];
 							$result = mysqli_query($mysqli, "SELECT * FROM pengajuanpkl WHERE npm='$user' ORDER BY id DESC ");
 							while($row = mysqli_fetch_array($result)) {
+								if ($row['status'] == "1") {
+									$status = "Diproses Admin";
+								} elseif ($row['status'] == "2") {
+									$status = "Diproses Dosen";
+								} elseif ($row['status'] == "3") {
+									$status = "Diproses Perusahaan";
+								} elseif ($row['status'] == "4") {
+									$status = "PKL diterima";
+								} else {
+									$status = "PKL ditolak";
+								}
 							echo '
 								<tr>
 								<td>'.$row['id'].'</td>
-								<td>'.$row['perusahaan'].'</td>
-								<td>'.$row['admin'].'</td>
-								<td>'.$row['dosen'].'</td>
-								<td>'.$row['status'].'</td>
+								<td>'.$row['pnama'].'</td>
+								<td>'.$row['anama'].'</td>
+								<td>'.$row['dnama'].'</td>
+								<td>'.$status.'</td>
 								<td>'.$row['tglpengajuan'].'</td>
 								<td>'.$row['tglaccadmin'].'</td>
 								<td>'.$row['tglaccdosen'].'</td>

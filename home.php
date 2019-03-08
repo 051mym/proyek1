@@ -57,7 +57,7 @@
 										</div>
 									</div>
 									<div class="col-md-4">
-										<div class="single_steps wow fadeIn" data-wow-duration="1.8s">
+										<div class="single_steps wow fadeIn" data-wow-duration="2.8s">
 											<a href=""><i class="fa fa-users"></i></a>
 											<h4>Dosen Pembimbing</h4>
 											<p>Dosen membimbing mahasiswa dalam melakukan Praktik Kerja Lapangan sesuai kesepakatan dengan mahasiswa </p>
@@ -90,30 +90,33 @@
 									</div>
 									';
 						} else {
+							echo '
+								<div class="col-md-4">
+									<div class="single_steps wow fadeIn" data-wow-duration="1s">
+										<a href=""><i class="fa fa-file-pdf-o"></i></a>
+										<h4>Verifikasi Dokumen Pengajuan PKL</h4>
+										<p>Admin memverifikasi data dan dokumen mahasiswa yg mengajukan Prakrik Kerja Lapangan</p>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="single_steps wow fadeIn" data-wow-duration="1.8s">
+										<a href=""><i class="fa fa-check"></i></a>
+										<h4>Admin Menerima Pengajuan PKL</h4>
+										<p>Dengan menerima pengajuan Praktik Kerja Lapangan admin telah memverifikasi dokumen sehingga proses pengajuan PKL bisa dilanjutkan</p>
+									</div>
+								</div>
+								<div class="col-md-4">
+										<div class="single_steps wow fadeIn" data-wow-duration="2.8s">
+											<a href=""><i class="fa fa-user-plus"></i></a>
+											<h4>Praktik Kerja Lapangan</h4>
+											<p>Mahasiswa melakukan Praktik Kerja Lapangan sesuai dengan kesepakatan dengan perusahaan</p>
+										</div>
+									</div>
+								'		;
 
 						}
 					?>
-<!-- 					<div class="col-md-4">
-						<div class="single_steps wow fadeIn" data-wow-duration="1s">
-							<a href=""><i class="fa fa-music"></i></a>
-							<h4>INTEGER VENEATIS</h4>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="single_steps wow fadeIn" data-wow-duration="1.8s">
-							<a href=""><i class="fa fa-bar-chart"></i></a>
-							<h4>INTEGER VENEATIS</h4>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="single_steps wow fadeIn" data-wow-duration="2.8s">
-							<a href=""><i class="fa fa-bar-chart"></i></a>
-							<h4>INTEGER VENEATIS</h4>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
-						</div>
-					</div> -->
+<!-- 					 -->
 
 				</div>
 			</div>

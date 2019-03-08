@@ -23,6 +23,7 @@ $Err = "";
          $sql = "SELECT * FROM admin WHERE id = '$user' and password = '$password'";
          $result = mysqli_query($mysqli,$sql);
          $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
+         $_SESSION['nama'] = $row['nama'];
              if($row['id'] == $user && $row['password'] == $password){
                   $_SESSION['login'] = "Admin";
                   header("Location: home.php");
@@ -34,6 +35,7 @@ $Err = "";
          $sql = "SELECT * FROM mahasiswa WHERE npm = '$user' and password = '$password'";
          $result = mysqli_query($mysqli,$sql);
          $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
+         $_SESSION['nama'] = $row['nama'];
              if($row['npm'] == $user && $row['password'] == $password){
                     $_SESSION['login'] = "Mahasiswa";
                     header("Location: home.php");
@@ -45,6 +47,7 @@ $Err = "";
          $sql = "SELECT * FROM dosen WHERE nip = '$user' and password = '$password'";
          $result = mysqli_query($mysqli,$sql);
          $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
+         $_SESSION['nama'] = $row['nama'];
              if($row['nip'] == $user && $row['password'] == $password){
                       $_SESSION['login'] = "Dosen";
                       header("Location: home.php");
@@ -56,6 +59,7 @@ $Err = "";
          $sql = "SELECT * FROM perusahaan WHERE id = '$user' and password = '$password'";
          $result = mysqli_query($mysqli,$sql);
          $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
+         $_SESSION['nama'] = $row['nama'];
              if($row['id'] == $user && $row['password'] == $password){
                       $_SESSION['login'] = "Perusahaan";
                       header("Location: home.php");
@@ -186,11 +190,16 @@ if(isset($_POST['update']))
         if($imageFileType == "pdf"){
             move_uploaded_file($_FILES["berkasproposal"]["tmp_name"], $target_file);
           }
-
+        
         $perusahaan = $_POST['perusahaan'];
         $dosen = $_POST['dosen'];
+        $sql = "SELECT p.nama as pnama, d.nama as dnama  FROM dosen as d, perusahaan as p WHERE p.id = '$perusahaan' AND d.nip='$dosen'";
+        $result = mysqli_query($mysqli,$sql);
+        $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
+        $dnama = $row['dnama'];
+        $pnama = $row['pnama'];
         $user = $_SESSION['login_user'];
-        $result = mysqli_query($mysqli, "INSERT INTO pengajuanpkl (npm,perusahaan,dosen,status,tglpengajuan) VALUES('$user','$perusahaan','$dosen','1',now())");
+        $result = mysqli_query($mysqli, "INSERT INTO pengajuanpkl (npm,perusahaan,dosen,status,tglpengajuan,pnama,dnama) VALUES ('$user','$perusahaan','$dosen','1',now(), '$pnama', '$dnama')");
         header("location: m_status.php");
 
     }
@@ -200,8 +209,10 @@ if(isset($_POST['update']))
     { 
       $id = $_POST['id'];
       $user=$_SESSION['login_user'];
+      
       if ($_SESSION["login"] == "Admin"){
-          $result = mysqli_query($mysqli, "UPDATE pengajuanpkl SET admin='$user',status='2',tglaccadmin=now() WHERE id='$id'");
+          $nama=$_SESSION["nama"];
+          $result = mysqli_query($mysqli, "UPDATE pengajuanpkl SET anama='$nama',admin='$user',status='2',tglaccadmin=now() WHERE id='$id'");
           header("Location: a_verifikasi.php");
       }else
       if ($_SESSION["login"] == "Dosen"){
