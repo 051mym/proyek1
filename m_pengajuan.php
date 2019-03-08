@@ -55,14 +55,14 @@
 			          	<div class="form-group"> 
 			          	<label for="berkasuniv" class="control-label col-sm-2">Berkas Universitas :</label>
 					    <div class=" col-sm-10">
-					      <input required type="file" class="form-control col-sm-1" name="berkasuniv">
+					      <input required type="file" class="form-control-file" name="berkasuniv">
 					    </div>
 					  </div>
 
 					  <div class="form-group">
 					  	<label for="berkasproposal" class="control-label col-sm-2">Berkas Proposal :</label>
 					    <div class=" col-sm-10">
-					      <input required type="file" class="form-control" name="berkasproposal">
+					      <input required type="file" class="form-control-file" name="berkasproposal">
 					    </div>
 					  </div>
 
