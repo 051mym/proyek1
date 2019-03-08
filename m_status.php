@@ -19,7 +19,7 @@
 							<th>Id Pengajuan</th>
 							<th>Perusahaan</th>
 							<th>Admin</th>
-							<th>Dosen</th>
+							<th>Dosen Pembimbing</th>
 							<th>Status</th>
 							<th>Proses Pengajuan</th>
 							<th>Proses Admin</th>
@@ -42,7 +42,7 @@
 								<td>'.$row['tglpengajuan'].'</td>
 								<td>'.$row['tglaccadmin'].'</td>
 								<td>'.$row['tglaccdosen'].'</td>
-								<td>'.$row['tglaccadmin'].'</td>
+								<td>'.$row['tglaccperusahaan'].'</td>
 								</tr>';      
 								}      
 							?>

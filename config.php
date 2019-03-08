@@ -196,4 +196,44 @@ if(isset($_POST['update']))
     }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+      if(isset($_POST['accept']))
+    { 
+      $id = $_POST['id'];
+      $user=$_SESSION['login_user'];
+      if ($_SESSION["login"] == "Admin"){
+          $result = mysqli_query($mysqli, "UPDATE pengajuanpkl SET admin='$user',status='2',tglaccadmin=now() WHERE id='$id'");
+          header("Location: a_verifikasi.php");
+      }else
+      if ($_SESSION["login"] == "Dosen"){
+          $result = mysqli_query($mysqli, "UPDATE pengajuanpkl SET status='3',tglaccdosen=now() WHERE id='$id'");
+          header("Location: d_verifikasi.php");
+      }else
+      if ($_SESSION["login"] == "Perusahaan"){
+          $result = mysqli_query($mysqli, "UPDATE pengajuanpkl SET status='4',tglaccperusahaan=now() WHERE id='$id'");
+          header("Location: p_verifikasi.php");
+      }
+
+
+    }
+
+      if(isset($_POST['deceline']))
+    {
+      $id = $_POST['id'];
+      $user=$_SESSION['login_user'];
+      if ($_SESSION["login"] == "Admin"){
+          $result = mysqli_query($mysqli, "UPDATE pengajuanpkl SET admin='$user',status='5',tglaccadmin=now() WHERE id='$id'");
+          header("Location: a_verifikasi.php");
+      }else
+      if ($_SESSION["login"] == "Dosen"){
+          $result = mysqli_query($mysqli, "UPDATE pengajuanpkl SET status='5',tglaccdosen=now() WHERE id='$id'");
+          header("Location: d_verifikasi.php");
+      }else
+      if ($_SESSION["login"] == "Perusahaan"){
+          $result = mysqli_query($mysqli, "UPDATE pengajuanpkl SET status='5',tglaccdosen=now() WHERE id='$id'");
+          header("Location: p_verifikasi.php");
+      }
+
+
+    }
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ?>

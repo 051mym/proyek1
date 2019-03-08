@@ -72,7 +72,7 @@
 				                        <a href="profile.php">Your Profile</a>
 				                    </li>
                                     <li>
-                                        <a href="#">Pengajuan Mahasiswa PKL</a>
+                                        <a href="d_verifikasi.php">Pengajuan Mahasiswa PKL</a>
                                     </li>
                                     <li>
                                         <a href="#">Pengajuan Diterima</a>
@@ -93,7 +93,7 @@
                                         <a href="p_persetujuan.php">Persetujuan</a>
                                     </li>
                                     <li>
-                                        <a href="#">Pengajuan Mahasiswa PKL</a>
+                                        <a href="p_verifikasi.php">Pengajuan Mahasiswa PKL</a>
                                     </li>
                                     <li>
                                         <a href="#">Pengajuan Diterima</a>
