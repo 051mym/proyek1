@@ -96,7 +96,7 @@ $Err = "";
         $target_dir = "files/profile/mahasiswa/";
         $target_file = $target_dir.'profile-'.$npm.strrchr($_FILES["foto"]["name"],'.');
         $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
-        if($imageFileType == "jpg" || $imageFileType == "png" || $imageFileType == "jpeg"){
+        if($imageFileType == "jpg"){
             move_uploaded_file($_FILES["foto"]["tmp_name"], $target_file);
           }
         header("location: login.php");
@@ -109,7 +109,7 @@ $Err = "";
         $target_dir = "files/profile/dosen/";
         $target_file = $target_dir.'profile-'.$nip.strrchr($_FILES["foto"]["name"],'.');
         $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
-        if($imageFileType == "jpg" || $imageFileType == "png" || $imageFileType == "jpeg"){
+        if($imageFileType == "jpg"){
             move_uploaded_file($_FILES["foto"]["tmp_name"], $target_file);
           }
         header("location: login.php");
@@ -142,7 +142,7 @@ if(isset($_POST['update']))
         $target_dir = "files/profile/mahasiswa/";
         $target_file = $target_dir.'profile-'.$npm.strrchr($_FILES["foto"]["name"],'.');
         $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
-        if($imageFileType == "jpg" || $imageFileType == "png" || $imageFileType == "jpeg"){
+        if($imageFileType == "jpg"){
             move_uploaded_file($_FILES["foto"]["tmp_name"], $target_file);
           }
         header("location: profile.php");
@@ -155,7 +155,7 @@ if(isset($_POST['update']))
         $target_dir = "files/profile/dosen/";
         $target_file = $target_dir.'profile-'.$nip.strrchr($_FILES["foto"]["name"],'.');
         $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
-        if($imageFileType == "jpg" || $imageFileType == "png" || $imageFileType == "jpeg"){
+        if($imageFileType == "jpg"){
             move_uploaded_file($_FILES["foto"]["tmp_name"], $target_file);
           }
         header("location: profile.php");
