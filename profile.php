@@ -49,8 +49,10 @@
 									echo '<img width="170" height="170" class="img-circle" src="files/profile/mahasiswa/profile-'.$npm.'.jpg" alt="profil mahasiswa" />';
 								} elseif ($_SESSION['login']=='Dosen') {
 									echo '<img width="170" height="170" class="img-circle" src="files/profile/dosen/profile-'.$nip.'.jpg" alt="profile dosen" />';
+								} elseif ($_SESSION['login']=='Perusahaan') {
+									echo '<img width="170" height="170" class="img-circle" src="images/gdg.jpg" alt="profile perusahaan" />';
 								} else {
-									echo '<img class="img-circle" src="" alt="" />';
+									echo '<img width="170" height="170" class="img-circle" src="images/admn1.png" alt="profile admin" />';
 								}
 
 								 ?>

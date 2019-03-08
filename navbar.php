@@ -51,7 +51,7 @@
 				                        <a href="home.php">Home</a>
 				                    </li>
 				                    <li>
-				                        <a href="profile.php">Your Profile</a>
+				                        <a href="profile.php">Profile</a>
 				                    </li>
                                     <li>
                                         <a href="m_pengajuan.php">Pengajuan PKL</a>
@@ -69,7 +69,7 @@
 				                        <a href="home.php">Home</a>
 				                    </li>
 				                    <li>
-				                        <a href="profile.php">Your Profile</a>
+				                        <a href="profile.php">  Profile</a>
 				                    </li>
                                     <li>
                                         <a href="d_verifikasi.php">Pengajuan Mahasiswa PKL</a>
@@ -87,7 +87,7 @@
 				                        <a href="home.php">Home</a>
 				                    </li>
 				                    <li>
-				                        <a href="profile.php">Your Profile</a>
+				                        <a href="profile.php">  Profile</a>
 				                    </li>
                                     <li>
                                         <a href="p_persetujuan.php">Berkas Persetujuan</a>
@@ -103,7 +103,7 @@
                     				</li>
                                     ';
                         }else echo '
-							<li class="active"><a href="index.php">Home</a></li>
+							<li><a href="index.php">Home</a></li>
 							<li><a href="about.php">About</a></li>					
 							<li><a href="galeri.php">Galeri</a></lli>
 							<li><a href="contact.php">Contact</a></li>

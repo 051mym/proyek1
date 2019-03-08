@@ -25,7 +25,7 @@
 					
 					<div class="col-md-6 col-sm-6 col-xs-12">
 						<div class="single_abouts wow fadeInRight" data-wow-duration="1s">
-							<img src="images/ab.jpg" alt="" />
+							<img src="images/ab.jpg" height="250" width="500" alt="About PKL" />
 						</div>
 					</div>
 				</div>
