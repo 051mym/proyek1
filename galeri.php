@@ -18,22 +18,22 @@
 						<div class="container">
 							<div class="row">
 								<div class="wedo_content_area">
-									
-									<div class="col-md-6 col-sm-6 col-xs-12">
+									<div class="col-md-1 col-sm-6 col-xs-6"></div>
+									<div class="col-md-5 col-sm-6 col-xs-6">
 										<div class="single_abouts wow fadeInLeft" data-wow-duration="1s">
 											<div class="row">
-												<img src="images/g1.png" alt="Galeri PKL" width="517" height="409">
+												<img src="images/g1.png" alt="Galeri PKL" width="400" height="300">
 											</div>
 										</div>
 									</div>
-									<div class="col-md-6 col-sm-6 col-xs-12">
+									<div class="col-md-5 col-sm-6 col-xs-6">
 										<div class="single_abouts wow fadeInRight" data-wow-duration="1s">
 											<div class="row">
-												<img src="images/g2.jpg" alt="Galeri PKL" width="517" height="409">
+												<img src="images/g2.jpg" alt="Galeri PKL" width="400" height="300">
 											</div>
 										</div>
 									</div>
-
+								<div class="col-md-1 col-sm-6 col-xs-6"></div>
 								</div>
 							</div>
 						</div>
