@@ -72,7 +72,7 @@
 					<div class="col-md-3 col-sm-6 col-xs-12">
 						<div class="single_team wow fadeIn" data-wow-duration="3s">
 							<div class="single_team_img">
-								<img src="images/5.png" alt="" width="517" height="330" />
+								<img src="images/5.jpg" alt="" width="517" height="330" />
 								<div class="single_team_overlay text-center">
 									<p>Hi ! I m Redwan from bangladesh.I am a Professional graphic designer & expert on print and UI/ UX .</p>
 									<a href=""><i class="fa fa-facebook"></i></a>
