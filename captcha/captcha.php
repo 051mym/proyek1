@@ -1,6 +1,19 @@
 <?php 
 session_start(); 
-$text = rand(10000,99999); 
+$n=6; 
+function getName($n) { 
+    $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'; 
+    $randomString = ''; 
+  
+    for ($i = 0; $i < $n; $i++) { 
+        $index = rand(0, strlen($characters) - 1); 
+        $randomString .= $characters[$index]; 
+    } 
+  
+    return $randomString; 
+} 
+  
+$text=getName($n);
 $_SESSION["vercode"] = $text; 
 $height = 25; 
 $width = 65;   

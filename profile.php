@@ -45,7 +45,6 @@
 					<div class="main_testimonial text-center wow fadeIn" data-wow-duration="1s">
 						<div class="single_testimonial">
 							<div class="single_testimonial_img">
-<<<<<<< HEAD
 								<?php if ($_SESSION['login']=='Mahasiswa') {
 									echo '<img width="170" height="170" class="img-circle" src="files/profile/mahasiswa/profile-'.$npm.'.jpg" alt="profil mahasiswa" />';
 								} elseif ($_SESSION['login']=='Dosen') {
@@ -55,15 +54,11 @@
 								}
 
 								 ?>
-								
-								
-=======
-								<img class="img-circle" src="images/tst1.jpg" alt="" />
->>>>>>> 26bdb8b7542bb0ed35c725c3911fd0646a969098
 								<div class="row">
 									<div class="col-sm-3"></div>
 									<div class="col-sm-6">
 										<div class="row">
+											<p>Id 		:   <?php echo $_SESSION['login_user'] ?></p>
 											<p>E-mail	:	<?php echo $email ?></p>
 											<p>Phone	:	<?php echo $nohp ?></p>
 											<?php
