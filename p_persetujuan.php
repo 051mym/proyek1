@@ -15,9 +15,9 @@
 				<form method="post" enctype="multipart/form-data">
 
 					<div class="form-group">
-					  	<label for="berkasproposa" class="control-label col-sm-2">Berkas Perusahaan :</label>
-					    <div>
-					      <input required type="file" class="form-control-file" name="berkasperusahaan">
+					  	<label for="berkasperusahaan" class="control-label col-sm-2">Berkas Perusahaan :</label>
+					    <div class=" col-sm-13">
+					      <input required type="file" class="form-control-file" name="berkasperusahaan">Maks 4056 KB (*.PDF) <br>
 					      <input  type="submit" class="btn btn-submit" name="p_persetujuan" value="Save">
 					 	</div>
 					</div>
