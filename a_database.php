@@ -13,7 +13,7 @@
 					<div class="separetor"></div>
 				</div><br>
 				<div>
-				<iframe src="https://www.w3schools.com"></iframe>									
+				<iframe height="580" width="100%" src="http://localhost/phpmyadmin/db_structure.php?server=1&db=pkl"></iframe>									
 				</div>
 			</div>
 		</div>

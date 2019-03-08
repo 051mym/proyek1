@@ -10,7 +10,7 @@ $(window).load(function () {
 	  
 	jQuery(window).scroll(function () {
 	  var top = jQuery(document).scrollTop();
-		var height = 300;
+		var height = 50;
 	  //alert(batas);
 	  
 	  if (top > height) {
