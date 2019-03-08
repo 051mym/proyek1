@@ -20,9 +20,11 @@
 							<div class="single_team_img">
 								<img src="images/2.jpg" alt="" width="517" height="330" />
 								<div class="single_team_overlay text-center">
-									<p>Hi ! I m Redwan from bangladesh.I am a Professional graphic designer & expert on print and UI/ UX .</p>
+									<p>GALANG.</p>
+									<a href=""><i class="fa fa-whatsapp"></i></a>
+									<a href=""><i class="fa fa-instagram"></i></a>
+									<a href=""><i class="fa fa-twitter"></i></a>
 									<a href=""><i class="fa fa-facebook"></i></a>
-									<a href=""><i class="fa fa-linkedin"></i></a>
 								</div>
 							</div>
 							<div class="single_team_name">
@@ -36,10 +38,12 @@
 							<div class="single_team_img">
 								<img src="images/3.jpg" alt="" width="517" height="330"/>
 								<div class="single_team_overlay text-center">
-									<p>Hi ! I m Redwan from bangladesh.I am a Professional graphic designer & expert on print and UI/ UX .</p>
+									<p>BAKTIAR.</p>
 									<p></p>
+									<a href=""><i class="fa fa-whatsapp"></i></a>
+									<a href=""><i class="fa fa-instagram"></i></a>
+									<a href=""><i class="fa fa-twitter"></i></a>
 									<a href=""><i class="fa fa-facebook"></i></a>
-									<a href=""><i class="fa fa-linkedin"></i></a>
 								</div>
 							</div>
 							<div class="single_team_name">
@@ -53,10 +57,12 @@
 							<div class="single_team_img">
 								<img src="images/4.jpg" alt="" width="517" height="330" />
 								<div class="single_team_overlay text-center">
-									<p>Hi ! I m Redwan from bangladesh.I am a Professional graphic designer & expert on print and UI/ UX .</p>
+									<p>FAIZ .</p>
 									<p></p>
+									<a href=""><i class="fa fa-whatsapp"></i></a>
+									<a href=""><i class="fa fa-instagram"></i></a>
+									<a href=""><i class="fa fa-twitter"></i></a>
 									<a href=""><i class="fa fa-facebook"></i></a>
-									<a href=""><i class="fa fa-linkedin"></i></a>
 								</div>
 							</div>
 							<div class="single_team_name">
@@ -74,9 +80,11 @@
 							<div class="single_team_img">
 								<img src="images/5.jpg" alt="" width="517" height="330" />
 								<div class="single_team_overlay text-center">
-									<p>Hi ! I m Redwan from bangladesh.I am a Professional graphic designer & expert on print and UI/ UX .</p>
+									<p>NOVA .</p>
+									<a href=""><i class="fa fa-whatsapp"></i></a>
+									<a href=""><i class="fa fa-instagram"></i></a>
+									<a href=""><i class="fa fa-twitter"></i></a>
 									<a href=""><i class="fa fa-facebook"></i></a>
-									<a href=""><i class="fa fa-linkedin"></i></a>
 								</div>
 							</div>
 							<div class="single_team_name">
@@ -90,9 +98,11 @@
 							<div class="single_team_img">
 								<img src="images/1.jpg" alt="" width="517" height="330" />
 								<div class="single_team_overlay text-center">
-									<p>Hi ! I m Redwan from bangladesh.I am a Professional graphic designer & expert on print and UI/ UX .</p>
+									<p>DEVITA .</p>
+									<a href=""><i class="fa fa-whatsapp"></i></a>
+									<a href=""><i class="fa fa-instagram"></i></a>
+									<a href=""><i class="fa fa-twitter"></i></a>
 									<a href=""><i class="fa fa-facebook"></i></a>
-									<a href=""><i class="fa fa-linkedin"></i></a>
 								</div>
 							</div>
 							<div class="single_team_name">

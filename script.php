@@ -1,4 +1,4 @@
-		<footer id="footer" class="footer">
+		<footer id="footer" class="footer bottom">
 			<div class="container">
 				<div class="row">
 					<div class="main_footer text-center wow zoomIn" data-wow-duration="1s">

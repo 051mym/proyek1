@@ -1022,6 +1022,9 @@ color:#fff;
 
 .footer{
 	background:#e84c3d;
+	position:absolute;
+   bottom:0;
+   width:100%;
 }
 
 .main_footer p{
