@@ -18,31 +18,27 @@
 						<tr>
 							<th>Id Pengajuan</th>
 							<th>Perusahaan</th>
-							<th>Admin</th>
 							<th>Dosen</th>
-							<th>Status</th>
 							<th>Proses Pengajuan</th>
-							<th>Proses Admin</th>
-							<th>Proses Dosen</th>
-							<th>Proses Perusahaan</th>
+							<th>Action</th>
 						</tr>
 					</thead>
 						<tbody>
 							<?php 
 							$user = $_SESSION['login_user'];
-							$result = mysqli_query($mysqli, "SELECT * FROM pengajuanpkl WHERE npm='$user' ORDER BY id DESC ");
+							$result = mysqli_query($mysqli, "SELECT * FROM pengajuanpkl WHERE status='1' ORDER BY id ASC ");
 							while($row = mysqli_fetch_array($result)) {
 							echo '
 								<tr>
+								<form method="POST">
 								<td>'.$row['id'].'</td>
 								<td>'.$row['perusahaan'].'</td>
-								<td>'.$row['admin'].'</td>
 								<td>'.$row['dosen'].'</td>
-								<td>'.$row['status'].'</td>
 								<td>'.$row['tglpengajuan'].'</td>
-								<td>'.$row['tglaccadmin'].'</td>
-								<td>'.$row['tglaccdosen'].'</td>
-								<td>'.$row['tglaccadmin'].'</td>
+								<input type="hidden" name="id_list" readonly value="'.$row["id"].'">
+                            	<td><input type="Submit" class="btn btn-link" value="Accept " name="accept">|<input type="Submit" class="btn btn-link" value=" Deceline" name="deceline"></td>
+								<td></td>
+								</form>
 								</tr>';      
 								}      
 							?>

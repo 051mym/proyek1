@@ -190,7 +190,7 @@ if(isset($_POST['update']))
         $perusahaan = $_POST['perusahaan'];
         $dosen = $_POST['dosen'];
         $user = $_SESSION['login_user'];
-        $result = mysqli_query($mysqli, "INSERT INTO pengajuanpkl (npm,perusahaan,dosen,tglpengajuan) VALUES('$user','$perusahaan','$dosen',now())");
+        $result = mysqli_query($mysqli, "INSERT INTO pengajuanpkl (npm,perusahaan,dosen,status,tglpengajuan) VALUES('$user','$perusahaan','$dosen','1',now())");
         header("location: m_status.php");
 
     }

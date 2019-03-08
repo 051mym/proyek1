@@ -33,7 +33,7 @@
 				                        <a href="profile.php">Profile</a>
 				                    </li>
                     				<li>
-                                        <a href="#">Verifikasi data PKL</a>
+                                        <a href="a_verifikasi.php">Verifikasi data PKL</a>
                                     </li>
                                     <li>
                                         <a href="#">List PKL</a>
