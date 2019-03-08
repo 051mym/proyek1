@@ -21,7 +21,11 @@
 							<th>Perusahaan</th>
 							<th>Dosen Pembimbing</th>
 							<th>Proses Pengajuan</th>
+							<th>File Universitas</th>
+							<th>File Proposal</th>
 							<th>Action</th>
+							<th></th>
+							
 						</tr>
 					</thead>
 						<tbody>
@@ -38,8 +42,9 @@
 								<td>'.$row['dnama'].'</td>
 								<td>'.$row['tglpengajuan'].'</td>
 								<input type="hidden" name="id" readonly value="'.$row['id'].'">
-                            	<td><input type="Submit" class="form-control" value="Accept " name="accept"></td>
-								<td><input type="Submit" class="form-control" value=" Deceline" name="deceline"></td>
+								<td><a class="btn-link" href="files/berkas/berkasuniv/" download="berkasuniv-'.$row["npm"].'.pdf">Download</a></td>
+								<td><a class="btn-link" href="files/berkas/berkasproposal/" download="berkasproposal-'.$row["npm"].'.pdf">Download</a></td>
+                            	<td><input type="Submit" class="btn-link" value="Accept " name="accept">|<input type="Submit" class="btn-link"  value=" Deceline" name="deceline"></td>	
 								</form>
 								</tr>';      
 								}      

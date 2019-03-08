@@ -16,7 +16,7 @@
 				<table class="table left">
 					<thead>
 						<tr>
-							<th>Id Pengajuan</th>
+							<th>Id</th>
 							<th>Perusahaan</th>
 							<th>Admin</th>
 							<th>Dosen Pembimbing</th>

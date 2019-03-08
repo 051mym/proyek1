@@ -20,11 +20,11 @@
 							<th>Perusahaan</th>
 							<th>Admin</th>
 							<th>Dosen Pembimbing</th>
-							<th>Status</th>
 							<th>Proses Pengajuan</th>
 							<th>Proses Admin</th>
 							<th>Proses Dosen</th>
 							<th>Proses Perusahaan</th>
+							<th>Status</th>
 						</tr>
 					</thead>
 						<tbody>
@@ -40,6 +40,7 @@
 									$status = "Diproses Perusahaan";
 								} elseif ($row['status'] == "4") {
 									$status = "Diterima";
+									$status='<a class="btn-link" href="files/berkas/berkasperusahaan/" download="berkasperusahaan-'.$row["perusahaan"].'.pdf">Diterima</a>';
 								} else {
 									$status = "Ditolak";
 								}
@@ -49,11 +50,11 @@
 								<td>'.$row['pnama'].'</td>
 								<td>'.$row['anama'].'</td>
 								<td>'.$row['dnama'].'</td>
-								<td>'.$status.'</td>
 								<td>'.$row['tglpengajuan'].'</td>
 								<td>'.$row['tglaccadmin'].'</td>
 								<td>'.$row['tglaccdosen'].'</td>
 								<td>'.$row['tglaccperusahaan'].'</td>
+								<td>'.$status.'</td>
 								</tr>';      
 								}      
 							?>
