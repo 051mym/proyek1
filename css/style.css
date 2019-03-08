@@ -1022,7 +1022,7 @@ color:#fff;
 
 .footer{
 	background:#e84c3d;
-	position:absolute;
+	position:fixed;
    bottom:0;
    width:100%;
 }
