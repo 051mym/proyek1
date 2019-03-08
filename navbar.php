@@ -90,7 +90,7 @@
 				                        <a href="profile.php">Your Profile</a>
 				                    </li>
                                     <li>
-                                        <a href="p_persetujuan.php">Persetujuan</a>
+                                        <a href="p_persetujuan.php">Berkas Persetujuan</a>
                                     </li>
                                     <li>
                                         <a href="p_verifikasi.php">Pengajuan Mahasiswa PKL</a>
