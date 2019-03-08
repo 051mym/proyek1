@@ -46,8 +46,6 @@
 						<div class="single_testimonial">
 							<div class="single_testimonial_img">
 								<img class="img-circle" src="images/tst1.jpg" alt="" />
-				<!-- 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,m quia.</p>
-								<a href="">RAF REDWAN</a> -->
 								<div class="row">
 									<div class="col-sm-3"></div>
 									<div class="col-sm-6">
@@ -64,7 +62,6 @@
 										</div>
 									</div>
 									<div class="col-sm-3"></div>
-									<!-- <div class="col-sm-4"></div> -->
 								</div>
 							</div>
 						</div>
