@@ -23,8 +23,8 @@
 							<th>Pengajuan</th>
 							<th>Diproses Admin</th>
 							<th>Diproses Dosen</th>
-							<th>File Universitas</th>
-							<th>File Proposal</th>
+							<th>Universitas </th>
+							<th>Proposal</th>
 							<th>Action</th>
 						</tr>
 					</thead>
@@ -44,8 +44,8 @@
 								<td>'.$row['tglaccadmin'].'</td>
 								<td>'.$row['tglaccdosen'].'</td>
 								<input type="hidden" name="id" readonly value="'.$row['id'].'">
-                            	<td><a class="btn-link" href="files/berkas/berkasuniv/" download="berkasuniv-'.$row["npm"].'.pdf">Download</a></td>
-								<td><a class="btn-link" href="files/berkas/berkasproposal/" download="berkasproposal-'.$row["npm"].'.pdf">Download</a></td>
+                            	<td><a class="btn-link" href="files/berkas/berkasuniv/berkasuniv-'.$row["npm"].'.pdf">Download</a></td>
+								<td><a class="btn-link" href="files/berkas/berkasproposal/berkasproposal-'.$row['npm'].'.pdf">Download</a></td>
                             	<td><input type="Submit" class="btn-link" value="Accept " name="accept">|<input type="Submit" class="btn-link"  value=" Deceline" name="deceline"></td>	
 								</form>
 								</tr>';      

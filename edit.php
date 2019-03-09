@@ -84,7 +84,7 @@
                                     <input type="number" class="form-control" name="nohp" value="<?php echo $nohp; ?>">
                                   </div>
                                   <?php 
-                                  if ($_SESSION["login"] != "Perusahaan") {
+                                  if ($_SESSION["login"] != "Perusahaan" ) {
                                     echo '<div class="form-group">
                                     <label for="foto">Foto :</label>
                                     <input type="file" class="form-control" name="foto" >

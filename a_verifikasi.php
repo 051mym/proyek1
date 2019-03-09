@@ -42,8 +42,8 @@
 								<td>'.$row['dnama'].'</td>
 								<td>'.$row['tglpengajuan'].'</td>
 								<input type="hidden" name="id" readonly value="'.$row['id'].'">
-								<td><a class="btn-link" href="files/berkas/berkasuniv/" download="berkasuniv-'.$row["npm"].'.pdf">Download</a></td>
-								<td><a class="btn-link" href="files/berkas/berkasproposal/" download="berkasproposal-'.$row["npm"].'.pdf">Download</a></td>
+								<td><a class="btn-link" href="files/berkas/berkasuniv/berkasuniv-'.$row["npm"].'.pdf">Download</a></td>
+								<td><a class="btn-link" href="files/berkas/berkasproposal/berkasproposal-'.$row['npm'].'.pdf">Download</a></td>
                             	<td><input type="Submit" class="btn-link" value="Accept " name="accept">|<input type="Submit" class="btn-link"  value=" Deceline" name="deceline"></td>	
 								</form>
 								</tr>';      

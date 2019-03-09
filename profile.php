@@ -67,9 +67,11 @@
 											if ($_SESSION['login']=='Perusahaan') {
 												echo '<p>Fax	:	'.$fax.'</p>';
 											}
+											if ($_SESSION['login'] != "Admin") {
+												echo '<a href="edit.php"><i class="fa fa-gears"></i> Edit Profile</a>';
+											}
+											
 											?>
-											<a href="edit.php"><i class="fa fa-gears"></i> Edit Profile</a>
-
 										</div>
 									</div>
 									<div class="col-sm-3"></div>
