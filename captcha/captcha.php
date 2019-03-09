@@ -1,5 +1,6 @@
 <?php 
-session_start(); 
+session_start();
+#Generate random char
 $n=6; 
 function getName($n) { 
     $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'; 
@@ -12,7 +13,6 @@ function getName($n) {
   
     return $randomString; 
 } 
-  
 $text=getName($n);
 $_SESSION["vercode"] = $text; 
 $height = 25; 

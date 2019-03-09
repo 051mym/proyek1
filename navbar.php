@@ -45,7 +45,6 @@
                         			<a href="logout.php">Logout</a>
                     				</li>';
                         } elseif ($_SESSION['login'] == 'Mahasiswa') {
-                            # code...
                             echo    '
                             		<li>
 				                        <a href="home.php">Home</a>

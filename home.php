@@ -16,7 +16,6 @@
 
 					<?php 
 						if ($_SESSION['login']=="Mahasiswa") {
-							# code...
 							echo 	'
 									<div class="col-md-4">
 										<div class="single_steps wow fadeIn" data-wow-duration="1s">
@@ -116,7 +115,6 @@
 
 						}
 					?>
-<!-- 					 -->
 
 				</div>
 			</div>

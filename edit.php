@@ -90,7 +90,6 @@
                                     <input type="file" class="form-control" name="foto" >
                                   </div>';
                                   } else {
-                                    # code...
                                     echo '<div class="form-group">
                                     <label for="fax">Fax :</label>
                                     <input type="text" class="form-control" name="fax" value="'.$fax.'">

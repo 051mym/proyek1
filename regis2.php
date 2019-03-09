@@ -63,7 +63,6 @@ include 'config.php';
                     <input type="file" class="form-control-file" name="foto" > Maks 2.048 KB (.jpg)
                   </div>';
                   } else {
-                    # code...
                     echo '<div class="form-group">
                     <label for="fax">Fax :</label>
                     <input type="text" class="form-control" name="fax">

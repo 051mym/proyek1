@@ -24,7 +24,6 @@
 			</div>
 		</div>
 	</section><!-- End of Banner Section -->
-	
 		<section id="featured" class="featured">
 		<div class="container">
 			<div class="row">

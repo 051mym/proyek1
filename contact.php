@@ -12,7 +12,6 @@
 					<div class="separetor"></div>
 					<p>Haii...!!!!</p>
 				</div>
-				
 				<div class="main_team_content text-center">
 
 					<div class="col-md-3 col-sm-6 col-xs-12">
@@ -114,8 +113,6 @@
 			</div>
 		</div>
 	</section>
-	
-
 <?php include 'script.php';?>
 </body>
 </html>

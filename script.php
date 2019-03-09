@@ -22,10 +22,6 @@
 
 	<script type="text/javascript" src="js/jquery-easing/jquery.easing.1.3.js"></script>
 	<script type="text/javascript" src="js/wow/wow.min.js"></script>
-	<!--<script type="text/javascript" src="js/counteup/counterup.min.js"></script>-->
-	
-	<!--<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>-->
-	<!--<script type="text/javascript" src="js/counterup/jquery.counterup.min.js"></script>-->
 	
 	
 	<script type="text/javascript" src="js/isotop/isotope.min.js"></script>

@@ -3,7 +3,6 @@
 <html>
 <?php include 'head.php';?>
 <body>
-
 <?php include 'navbar.php';?>
 <br>
 	<section id="abouts" class="abouts">

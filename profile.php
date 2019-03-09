@@ -14,12 +14,10 @@
         $result = mysqli_query($mysqli, "SELECT * FROM mahasiswa WHERE npm=$user");
         $user_data = mysqli_fetch_array($result);
         $npm = $user_data['npm'];
-        # foto
     } elseif ($_SESSION['login'] == 'Dosen') {
         $result = mysqli_query($mysqli, "SELECT * FROM dosen WHERE nip=$user");
         $user_data = mysqli_fetch_array($result);
         $nip = $user_data['nip'];
-        # foto
     } else {
         $result = mysqli_query($mysqli, "SELECT * FROM perusahaan WHERE id=$user");
         $user_data = mysqli_fetch_array($result);
@@ -54,8 +52,7 @@
 								} else {
 									echo '<img width="170" height="170" class="img-circle" src="images/admn1.png" alt="profile admin" />';
 								}
-
-								 ?>
+								?>
 								<div class="row">
 									<div class="col-sm-3"></div>
 									<div class="col-sm-6">
@@ -70,7 +67,6 @@
 											if ($_SESSION['login'] != "Admin") {
 												echo '<a href="edit.php"><i class="fa fa-gears"></i> Edit Profile</a>';
 											}
-											
 											?>
 										</div>
 									</div>
@@ -83,7 +79,6 @@
 			</div>
 		</div>
 </section>
-
 <?php include 'script.php';?>
 </body>
 </html>

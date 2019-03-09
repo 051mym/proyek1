@@ -65,7 +65,6 @@
 					      <input required type="file" class="form-control-file" name="berkasproposal"> Maks 4056 KB (*.PDF)
 					    </div>
 					  </div>
-
 			          	<!-- upload file -->
 					  <div class="form-group"> 
 					    <div class="col-sm-offset-2 col-sm-10">
@@ -78,7 +77,6 @@
 			</div>
 		</div>
 </section>
-
 <?php include 'script.php';?>
 </body>
 </html>

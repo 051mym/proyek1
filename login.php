@@ -1,12 +1,9 @@
-<?php 
-include 'config.php';
-?>
+<?php include 'config.php'; ?>
 <!DOCTYPE html >
 <html lang="en">
 <?php include 'head.php';?>
 <body>
 <?php include 'navbar.php';?>
-
 	<section id="contact" class="contact">
 			<div class="container">
 				<div class="row">
@@ -27,8 +24,6 @@ include 'config.php';
             						<?php echo $Err; ?>
           						</div>
 								<form method="post" id="formid">
-										<!--<div class="col-lg-8 col-md-8 col-sm-10 col-lg-offset-2 col-md-offset-2 col-sm-offset-1">-->
-										  
 										 <div class="row">
 										 	<div class="col-md-3"></div>
 											<div class="col-md-6">

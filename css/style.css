@@ -9,9 +9,6 @@ Author URI: http://bootstrapthemes.co
    ========================================================================== */
 
 
-
-
-
 body {
 	color: #767676;
 	-webkit-font-smoothing: antialiased;
@@ -106,8 +103,6 @@ input[type="color"],
 p {
 	font: normal 16px "Myriad Pro", arial, sans-serif;
 }
-
-/*h1,h2,h3,h4,h5,h6 { color: #767676;}*/
 
 h1 {
 	font-size: 48px;
