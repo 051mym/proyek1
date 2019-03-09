@@ -14,11 +14,8 @@
 						<div class="single_abouts wow fadeInLeft" data-wow-duration="1s">
 							<h2>About PKL Online</h2>
 							<div class="separetor2"></div>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur.</p>
+							<p>Sistem PKL ONline ini dibuat untuk mempermudah proses pengajuan praktek kerja lapangan bagi mahasiswa. Mahasiswa dapat mengajukan proposal praktek kerja lapangan secara online kepada Progdi Manajemen, dosen dan perusahaan sehingga proses pengajuan dapat dengan mudah dipantau.</p>
+							<td><a class="btn btn-pink" href="files/panduanpkl.pdf">Learn More !</a></td>
 						</div>
 					</div>
 					
